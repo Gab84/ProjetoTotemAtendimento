@@ -35,7 +35,7 @@ namespace ProjetoTotem
 
         private void bt_etiqueta_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Teste3");
         }
 
         private void bt_requisicao_Click(object sender, EventArgs e)
