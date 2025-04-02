@@ -22,34 +22,30 @@ namespace ProjetoTotem
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void bt_problema_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void bt_chamado_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void bt_etiqueta_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void bt_requisicao_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void bt_incidente_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("teste botão!!!");
         }
     }
 }

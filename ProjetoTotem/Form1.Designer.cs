@@ -32,12 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.bt_problema = new System.Windows.Forms.Button();
+            this.bt_chamado = new System.Windows.Forms.Button();
+            this.bt_etiqueta = new System.Windows.Forms.Button();
+            this.bt_requisicao = new System.Windows.Forms.Button();
+            this.bt_incidente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,57 +60,57 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // button5
+            // bt_problema
             // 
-            this.button5.BackgroundImage = global::ProjetoTotem.Properties.Resources.bt_51;
-            this.button5.Location = new System.Drawing.Point(1333, 689);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(364, 116);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.bt_problema.BackgroundImage = global::ProjetoTotem.Properties.Resources.bt_11;
+            this.bt_problema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bt_problema.Location = new System.Drawing.Point(168, 615);
+            this.bt_problema.Name = "bt_problema";
+            this.bt_problema.Size = new System.Drawing.Size(364, 116);
+            this.bt_problema.TabIndex = 6;
+            this.bt_problema.UseVisualStyleBackColor = true;
+            this.bt_problema.Click += new System.EventHandler(this.bt_problema_Click);
             // 
-            // button3
+            // bt_chamado
             // 
-            this.button3.BackgroundImage = global::ProjetoTotem.Properties.Resources.bt_41;
-            this.button3.Location = new System.Drawing.Point(602, 778);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(364, 116);
-            this.button3.TabIndex = 3;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.bt_chamado.BackgroundImage = global::ProjetoTotem.Properties.Resources.bt_21;
+            this.bt_chamado.Location = new System.Drawing.Point(682, 615);
+            this.bt_chamado.Name = "bt_chamado";
+            this.bt_chamado.Size = new System.Drawing.Size(364, 116);
+            this.bt_chamado.TabIndex = 7;
+            this.bt_chamado.UseVisualStyleBackColor = true;
+            this.bt_chamado.Click += new System.EventHandler(this.bt_chamado_Click);
             // 
-            // button4
+            // bt_etiqueta
             // 
-            this.button4.BackgroundImage = global::ProjetoTotem.Properties.Resources.bt_31;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button4.Location = new System.Drawing.Point(148, 778);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(364, 116);
-            this.button4.TabIndex = 2;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.bt_etiqueta.BackgroundImage = global::ProjetoTotem.Properties.Resources.bt_31;
+            this.bt_etiqueta.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.bt_etiqueta.Location = new System.Drawing.Point(168, 778);
+            this.bt_etiqueta.Name = "bt_etiqueta";
+            this.bt_etiqueta.Size = new System.Drawing.Size(364, 116);
+            this.bt_etiqueta.TabIndex = 8;
+            this.bt_etiqueta.UseVisualStyleBackColor = true;
+            this.bt_etiqueta.Click += new System.EventHandler(this.bt_etiqueta_Click);
             // 
-            // button2
+            // bt_requisicao
             // 
-            this.button2.BackgroundImage = global::ProjetoTotem.Properties.Resources.bt_21;
-            this.button2.Location = new System.Drawing.Point(602, 615);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(364, 116);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.bt_requisicao.BackgroundImage = global::ProjetoTotem.Properties.Resources.bt_41;
+            this.bt_requisicao.Location = new System.Drawing.Point(682, 778);
+            this.bt_requisicao.Name = "bt_requisicao";
+            this.bt_requisicao.Size = new System.Drawing.Size(364, 116);
+            this.bt_requisicao.TabIndex = 9;
+            this.bt_requisicao.UseVisualStyleBackColor = true;
+            this.bt_requisicao.Click += new System.EventHandler(this.bt_requisicao_Click);
             // 
-            // button1
+            // bt_incidente
             // 
-            this.button1.BackgroundImage = global::ProjetoTotem.Properties.Resources.bt_11;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(148, 615);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(364, 116);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.bt_incidente.BackgroundImage = global::ProjetoTotem.Properties.Resources.bt_51;
+            this.bt_incidente.Location = new System.Drawing.Point(1349, 686);
+            this.bt_incidente.Name = "bt_incidente";
+            this.bt_incidente.Size = new System.Drawing.Size(364, 116);
+            this.bt_incidente.TabIndex = 10;
+            this.bt_incidente.UseVisualStyleBackColor = true;
+            this.bt_incidente.Click += new System.EventHandler(this.bt_incidente_Click);
             // 
             // Form1
             // 
@@ -118,12 +118,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.bt_incidente);
+            this.Controls.Add(this.bt_requisicao);
+            this.Controls.Add(this.bt_etiqueta);
+            this.Controls.Add(this.bt_chamado);
+            this.Controls.Add(this.bt_problema);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -137,13 +137,13 @@
         #endregion
 
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button bt_problema;
+        private System.Windows.Forms.Button bt_chamado;
+        private System.Windows.Forms.Button bt_etiqueta;
+        private System.Windows.Forms.Button bt_requisicao;
+        private System.Windows.Forms.Button bt_incidente;
     }
 }
 
