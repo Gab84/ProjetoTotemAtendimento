@@ -1,0 +1,10 @@
+C:\Users\gab\Desktop\TotemTrabalho\ProjetoTotem\ProjetoTotem\bin\Debug\ProjetoTotem.exe.config
+C:\Users\gab\Desktop\TotemTrabalho\ProjetoTotem\ProjetoTotem\bin\Debug\ProjetoTotem.exe
+C:\Users\gab\Desktop\TotemTrabalho\ProjetoTotem\ProjetoTotem\bin\Debug\ProjetoTotem.pdb
+C:\Users\gab\Desktop\TotemTrabalho\ProjetoTotem\ProjetoTotem\obj\Debug\ProjetoTotem.csproj.AssemblyReference.cache
+C:\Users\gab\Desktop\TotemTrabalho\ProjetoTotem\ProjetoTotem\obj\Debug\ProjetoTotem.Form1.resources
+C:\Users\gab\Desktop\TotemTrabalho\ProjetoTotem\ProjetoTotem\obj\Debug\ProjetoTotem.Properties.Resources.resources
+C:\Users\gab\Desktop\TotemTrabalho\ProjetoTotem\ProjetoTotem\obj\Debug\ProjetoTotem.csproj.GenerateResource.cache
+C:\Users\gab\Desktop\TotemTrabalho\ProjetoTotem\ProjetoTotem\obj\Debug\ProjetoTotem.csproj.CoreCompileInputs.cache
+C:\Users\gab\Desktop\TotemTrabalho\ProjetoTotem\ProjetoTotem\obj\Debug\ProjetoTotem.exe
+C:\Users\gab\Desktop\TotemTrabalho\ProjetoTotem\ProjetoTotem\obj\Debug\ProjetoTotem.pdb
