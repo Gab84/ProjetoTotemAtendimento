@@ -106,6 +106,7 @@
             this.button1.Size = new System.Drawing.Size(364, 116);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
+
             // 
             // Form1
             // 
