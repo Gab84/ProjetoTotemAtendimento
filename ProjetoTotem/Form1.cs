@@ -25,12 +25,12 @@ namespace ProjetoTotem
 
         private void bt_problema_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Teste");
         }
 
         private void bt_chamado_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Teste2");
         }
 
         private void bt_etiqueta_Click(object sender, EventArgs e)
