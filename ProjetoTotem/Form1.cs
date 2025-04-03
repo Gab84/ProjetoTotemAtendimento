@@ -40,7 +40,7 @@ namespace ProjetoTotem
 
         private void bt_requisicao_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Teste5");
         }
 
         private void bt_incidente_Click(object sender, EventArgs e)
