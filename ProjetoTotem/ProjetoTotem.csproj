@@ -143,5 +143,14 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linharodape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcelorpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoapp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,6 +63,16 @@ namespace ProjetoTotem.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arcelorpng {
+            get {
+                object obj = ResourceManager.GetObject("arcelorpng", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bt_1 {
             get {
                 object obj = ResourceManager.GetObject("bt_1", resourceCulture);
@@ -166,6 +176,26 @@ namespace ProjetoTotem.Properties {
         internal static System.Drawing.Bitmap img_bv {
             get {
                 object obj = ResourceManager.GetObject("img_bv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap linharodape {
+            get {
+                object obj = ResourceManager.GetObject("linharodape", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoapp {
+            get {
+                object obj = ResourceManager.GetObject("logoapp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
