@@ -26,22 +26,30 @@ namespace ProjetoTotem
         private void bt_problema_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Teste");
+            Tl_Incidente TelaIncidente = new Tl_Incidente();
+            TelaIncidente.Show();
         }
 
         private void bt_chamado_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Teste2");
+            Tl_Chamado TelaChamado = new Tl_Chamado();
+            TelaChamado.Show();
         }
 
         private void bt_etiqueta_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Teste3");
+            Tl_Etiqueta TelaEtiqueta = new Tl_Etiqueta();
+            TelaEtiqueta.Show();
         }
 
         private void bt_requisicao_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Teste5");
             MessageBox.Show("Teste5");
+            Tl_Requisicao TelaRequisicao = new Tl_Requisicao();
+            TelaRequisicao.Show();
         }
 
         private void bt_incidente_Click(object sender, EventArgs e)

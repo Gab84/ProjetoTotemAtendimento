@@ -8,3 +8,7 @@ C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.csproj.Ge
 C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.csproj.CoreCompileInputs.cache
 C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.exe
 C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.pdb
+C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Incidente.resources
+C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Chamado.resources
+C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Etiqueta.resources
+C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Requisicao.resources
