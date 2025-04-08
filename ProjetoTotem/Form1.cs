@@ -54,7 +54,8 @@ namespace ProjetoTotem
 
         private void bt_incidente_Click(object sender, EventArgs e)
         {
-
+            Tl_Senhas TelaSenhas = new Tl_Senhas();
+            TelaSenhas.Show();
         }
     }
 }
