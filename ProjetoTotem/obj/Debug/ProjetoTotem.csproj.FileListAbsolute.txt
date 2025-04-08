@@ -12,3 +12,4 @@ C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Incide
 C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Chamado.resources
 C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Etiqueta.resources
 C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Requisicao.resources
+C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Senhas.resources

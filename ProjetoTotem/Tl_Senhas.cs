@@ -41,7 +41,7 @@ namespace ProjetoTotem
 
         private void TituloSenhas_click(object sender, EventArgs e)
         {
-            TituloSenha01.Text = "teste";
+            TituloSenha01.Text = "mudeis";
         }
     }
 }
