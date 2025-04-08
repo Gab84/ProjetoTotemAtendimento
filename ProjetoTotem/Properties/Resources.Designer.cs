@@ -133,6 +133,16 @@ namespace ProjetoTotem.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bt_3redondo {
+            get {
+                object obj = ResourceManager.GetObject("bt_3redondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bt_4 {
             get {
                 object obj = ResourceManager.GetObject("bt_4", resourceCulture);

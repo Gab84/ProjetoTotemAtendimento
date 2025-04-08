@@ -121,6 +121,12 @@
   <data name="Tem um problema" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tem um problema.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logoapp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoapp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arcelorpng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arcelorpng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bt_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,10 +163,7 @@
   <data name="bt_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt_21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arcelorpng" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arcelorpng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logoapp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoapp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bt_3redondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bt_3redondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
