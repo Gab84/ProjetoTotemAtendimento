@@ -19,17 +19,14 @@ namespace ProjetoTotem
 
         private void Tl_Senhas_Load(object sender, EventArgs e)
         {
-
+            Tsenha.Text = "SENHA";
+            numSenha.Text = "490";
+            tipoSenha.Text = "Porta A";
         }
 
         
 
         private void BackGround_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void teste_3(object sender, EventArgs e)
         {
 
         }
@@ -41,7 +38,12 @@ namespace ProjetoTotem
 
         private void TituloSenhas_click(object sender, EventArgs e)
         {
-            TituloSenha01.Text = "mudeis";
+            Tsenha.Text = "mudeis";
+        }
+
+        private void numSenha_click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -32,9 +32,9 @@
             System.Windows.Forms.PictureBox pictureBox2;
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.TituloSenha01 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Tsenha = new System.Windows.Forms.Label();
+            this.numSenha = new System.Windows.Forms.Label();
+            this.tipoSenha = new System.Windows.Forms.Label();
             pictureBox1 = new System.Windows.Forms.PictureBox();
             pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).BeginInit();
@@ -44,7 +44,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = System.Drawing.Color.Gainsboro;
+            pictureBox1.BackColor = System.Drawing.Color.Azure;
             pictureBox1.Enabled = false;
             pictureBox1.Location = new System.Drawing.Point(1228, 149);
             pictureBox1.Name = "pictureBox1";
@@ -55,7 +55,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
+            pictureBox2.BackColor = System.Drawing.Color.Azure;
             pictureBox2.Enabled = false;
             pictureBox2.Location = new System.Drawing.Point(1228, 570);
             pictureBox2.Name = "pictureBox2";
@@ -76,42 +76,44 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Azure;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 127);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1113, 881);
             this.dataGridView1.TabIndex = 1;
             // 
-            // TituloSenha01
+            // Tsenha
             // 
-            this.TituloSenha01.AutoSize = true;
-            this.TituloSenha01.Location = new System.Drawing.Point(1528, 165);
-            this.TituloSenha01.Name = "TituloSenha01";
-            this.TituloSenha01.Size = new System.Drawing.Size(35, 13);
-            this.TituloSenha01.TabIndex = 4;
-            this.TituloSenha01.Text = "label2";
-            this.TituloSenha01.Click += new System.EventHandler(this.TituloSenhas_click);
+            this.Tsenha.AutoSize = true;
+            this.Tsenha.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tsenha.Location = new System.Drawing.Point(1501, 160);
+            this.Tsenha.Name = "Tsenha";
+            this.Tsenha.Size = new System.Drawing.Size(69, 24);
+            this.Tsenha.TabIndex = 4;
+            this.Tsenha.Text = "label2";
+            this.Tsenha.Click += new System.EventHandler(this.TituloSenhas_click);
             // 
-            // label3
+            // numSenha
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1528, 319);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
-            this.label3.Click += new System.EventHandler(this.teste_3);
+            this.numSenha.AutoSize = true;
+            this.numSenha.Font = new System.Drawing.Font("Arial Black", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSenha.Location = new System.Drawing.Point(1431, 281);
+            this.numSenha.Name = "numSenha";
+            this.numSenha.Size = new System.Drawing.Size(265, 95);
+            this.numSenha.TabIndex = 5;
+            this.numSenha.Text = "label3";
             // 
-            // label4
+            // tipoSenha
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1528, 466);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "label4";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.tipoSenha.AutoSize = true;
+            this.tipoSenha.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipoSenha.Location = new System.Drawing.Point(1481, 446);
+            this.tipoSenha.Name = "tipoSenha";
+            this.tipoSenha.Size = new System.Drawing.Size(132, 46);
+            this.tipoSenha.TabIndex = 6;
+            this.tipoSenha.Text = "label4";
+            this.tipoSenha.Click += new System.EventHandler(this.label4_Click);
             // 
             // Tl_Senhas
             // 
@@ -120,9 +122,9 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.TituloSenha01);
+            this.Controls.Add(this.tipoSenha);
+            this.Controls.Add(this.numSenha);
+            this.Controls.Add(this.Tsenha);
             this.Controls.Add(pictureBox2);
             this.Controls.Add(pictureBox1);
             this.Controls.Add(this.dataGridView1);
@@ -144,8 +146,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label TituloSenha01;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Tsenha;
+        private System.Windows.Forms.Label numSenha;
+        private System.Windows.Forms.Label tipoSenha;
     }
 }
