@@ -13,3 +13,18 @@ C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Chamad
 C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Etiqueta.resources
 C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Requisicao.resources
 C:\Users\gab\Desktop\projeto totem\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Senhas.resources
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\ProjetoTotem.exe.config
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\ProjetoTotem.exe
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\ProjetoTotem.pdb
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.csproj.AssemblyReference.cache
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Form1.resources
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Properties.Resources.resources
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Chamado.resources
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Etiqueta.resources
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Incidente.resources
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Requisicao.resources
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Senhas.resources
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.csproj.GenerateResource.cache
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.csproj.CoreCompileInputs.cache
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.exe
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.pdb
