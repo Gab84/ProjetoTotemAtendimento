@@ -33,7 +33,7 @@ namespace ProjetoTotem
 
         private void bt_chamado_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Teste2");
+            MessageBox.Show("Teste6");
             Tl_Chamado TelaChamado = new Tl_Chamado();
             TelaChamado.Show();
         }

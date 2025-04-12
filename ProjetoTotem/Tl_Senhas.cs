@@ -25,9 +25,9 @@ namespace ProjetoTotem
         private void Texts_to_load()
         {
 
-            Tsenha.Text = "SENHA";
-            numSenha.Text = "490";
-            tipoSenha.Text = "NORMAL";
+
+            numSenha.Text = "1";
+
             portaAtendimento.Text = "PORTA A";
 
         }
@@ -44,7 +44,7 @@ namespace ProjetoTotem
 
         private void TituloSenhas_click(object sender, EventArgs e)
         {
-            Tsenha.Text = "mudeis";
+            
         }
 
         private void numSenha_click(object sender, EventArgs e)
@@ -53,6 +53,11 @@ namespace ProjetoTotem
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void numSenha_Click_1(object sender, EventArgs e)
         {
 
         }
