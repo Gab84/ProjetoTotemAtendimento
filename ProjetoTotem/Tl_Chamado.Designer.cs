@@ -50,6 +50,7 @@
             this.Name = "Tl_Chamado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tl_Chamado";
+            this.Load += new System.EventHandler(this.Tl_Chamado_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
