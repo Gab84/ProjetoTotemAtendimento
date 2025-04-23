@@ -16,5 +16,10 @@ namespace ProjetoTotem
         {
             InitializeComponent();
         }
+
+        private void Tl_Chamado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
