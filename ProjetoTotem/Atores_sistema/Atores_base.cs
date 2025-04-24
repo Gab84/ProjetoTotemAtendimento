@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Firebase.Database;
 
 namespace ProjetoTotem
 {
@@ -23,8 +24,11 @@ namespace ProjetoTotem
 
         public string Status { get; set; }
 
+        public string Prioridade { get; set; }
+
 
     }
 
+    
 
 }

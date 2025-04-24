@@ -8,19 +8,16 @@ using Firebase.Database.Query;
 
 namespace ProjetoTotem
 {
-    public class FirebaseService
+    public class FBConnector
     {
 
-        private readonly FirebaseClient _firebase; //cria o objeto para acesso do cliente Firebase
+        public readonly FirebaseClient BDoor;
 
-        public FirebaseService()
+        public FBConnector()
         {
 
-            _firebase = new FirebaseClient("https://totematendimento-78bc9-default-rtdb.firebaseio.com/");
-
+            this.BDoor = new FirebaseClient("https://totematendimento-78bc9-default-rtdb.firebaseio.com/");
         }
-
-       
 
 
     }

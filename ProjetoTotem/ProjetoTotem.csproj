@@ -121,6 +121,12 @@
     <Compile Include="Tl_Senhas.Designer.cs">
       <DependentUpon>Tl_Senhas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tl_Tecnicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tl_Tecnicos.Designer.cs">
+      <DependentUpon>Tl_Tecnicos.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tl_Senhas.resx">
       <DependentUpon>Tl_Senhas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tl_Tecnicos.resx">
+      <DependentUpon>Tl_Tecnicos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

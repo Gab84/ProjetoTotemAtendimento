@@ -15,12 +15,14 @@ namespace ProjetoTotem
     public partial class Tl_Senhas: Form
     {
 
-
+        //FBConnector conn;
        // private readonly FirebaseService firebase;
         public Tl_Senhas()
         {
             InitializeComponent();
             FirebaseClient _firebase = new FirebaseClient("https://totematendimento-78bc9-default-rtdb.firebaseio.com/");
+            //FBConnector conn = new FBConnector();
+            
             AtualizarTela(_firebase);
         }
 
