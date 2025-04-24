@@ -83,7 +83,6 @@
   <ItemGroup>
     <Compile Include="Atores_sistema\Atores_base.cs" />
     <Compile Include="DAOs\AtendimentoDAO.cs" />
-    <Compile Include="Atores_sistema\FirebaseService.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -100,6 +100,7 @@
             this.Name = "Tl_Incidente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tl_Incidente";
+            this.Load += new System.EventHandler(this.Tl_Incidente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
