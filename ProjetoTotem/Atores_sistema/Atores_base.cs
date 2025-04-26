@@ -16,7 +16,9 @@ namespace ProjetoTotem
 
         public string TecnicoId { get; set; }
         public string TecnicoNome { get; set; }
-       
+
+        public string TecnicoLogin { get; set; }  //atributo colocado apenas para teste
+
         public string Num_incidente { get; set; }
 
         public string Patrimonio_Maq { get; set; }
@@ -25,6 +27,19 @@ namespace ProjetoTotem
         public string Status { get; set; }
 
         public string Prioridade { get; set; }
+    }
+
+    public class Tecnico
+    {
+
+        public string Id { get; set; }
+        public string Nome { get; set; }
+
+        public string login { get; set; }
+
+        public string senha { get; set; }
+
+        public string status { get; set;}
 
 
     }

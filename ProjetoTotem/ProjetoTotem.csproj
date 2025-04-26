@@ -82,7 +82,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Atores_sistema\Atores_base.cs" />
+    <Compile Include="Atores_sistema\FBservices.cs" />
     <Compile Include="DAOs\AtendimentoDAO.cs" />
+    <Compile Include="DAOs\TecnicoDAO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +110,12 @@
     </Compile>
     <Compile Include="Tl_Incidente.Designer.cs">
       <DependentUpon>Tl_Incidente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tl_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tl_Login.Designer.cs">
+      <DependentUpon>Tl_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Tl_Requisicao.cs">
       <SubType>Form</SubType>
@@ -148,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tl_Incidente.resx">
       <DependentUpon>Tl_Incidente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tl_Login.resx">
+      <DependentUpon>Tl_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tl_Requisicao.resx">
       <DependentUpon>Tl_Requisicao.cs</DependentUpon>
