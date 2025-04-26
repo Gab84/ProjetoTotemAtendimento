@@ -11,11 +11,15 @@ using System.Windows.Forms;
 
 namespace ProjetoTotem
 {
+   
     public partial class Form1: Form
     {
+
+        private Tecnico UserTecnico;
         public Form1()
         {
             InitializeComponent();
+            UserTecnico = new Tecnico();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -61,7 +65,17 @@ namespace ProjetoTotem
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            Tl_Login TelaLogin = new Tl_Login();
+            TelaLogin.ShowDialog();
+            UserTecnico.login = TelaLogin.login;
+            UserTecnico.senha = TelaLogin.senha;
+            
+        }
 
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Tl_Tecnicos TelaTecnicos = new Tl_Tecnicos(UserTecnico);
+            TelaTecnicos.Show();
         }
     }
 }

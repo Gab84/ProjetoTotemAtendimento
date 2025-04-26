@@ -39,6 +39,7 @@ namespace ProjetoTotem
 
         public async Task<List<Atendimento>> GetFinalizados(FirebaseClient _firebase) =>
            (await ListarAtendimentos(_firebase)).Where(a => a.Status == "finalizado").ToList();
+        
 
         public async Task<Atendimento> GetEmAtendimento(FirebaseClient _firebase) =>
             (await ListarAtendimentos(_firebase)).FirstOrDefault(a => a.Status == "em_atendimento");
@@ -58,6 +59,10 @@ namespace ProjetoTotem
             //labelProximo.Text = proximo?.Id ?? "Nenhum";
             dataGridView1.DataSource = finalizados;
         }
+
+
+
+
 
         private void Tl_Senhas_Load(object sender, EventArgs e)
         {
