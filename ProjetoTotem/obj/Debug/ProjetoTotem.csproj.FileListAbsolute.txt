@@ -58,3 +58,33 @@ C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões
 C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\V2.1\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.pdb
 C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\V2.1\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Tecnicos.resources
 C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\V2.1\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Login.resources
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\ProjetoTotem.exe.config
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\ProjetoTotem.exe
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\ProjetoTotem.pdb
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\Firebase.dll
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\LiteDB.dll
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\System.Reactive.dll
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\Firebase.xml
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\LiteDB.xml
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\System.Reactive.xml
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.csproj.AssemblyReference.cache
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Form1.resources
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Properties.Resources.resources
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Chamado.resources
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Etiqueta.resources
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Incidente.resources
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Login.resources
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Requisicao.resources
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Senhas.resources
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Tecnicos.resources
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.csproj.GenerateResource.cache
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.csproj.CoreCompileInputs.cache
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoT.A76B6C43.Up2Date
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.exe
+C:\Users\Gab\OneDrive - Empresa Brasileira de Ensino - EMBRAE - MULTIVIX\Área de Trabalho\TotemAtentimento\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.pdb

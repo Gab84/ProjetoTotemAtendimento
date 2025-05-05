@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tl_Login));
             this.TBsenha = new System.Windows.Forms.TextBox();
             this.Blogin = new System.Windows.Forms.Button();
             this.Bsair = new System.Windows.Forms.Button();
@@ -36,42 +37,46 @@
             // 
             // TBsenha
             // 
-            this.TBsenha.Location = new System.Drawing.Point(166, 284);
+            this.TBsenha.Location = new System.Drawing.Point(847, 689);
+            this.TBsenha.Multiline = true;
             this.TBsenha.Name = "TBsenha";
-            this.TBsenha.Size = new System.Drawing.Size(235, 20);
+            this.TBsenha.Size = new System.Drawing.Size(235, 31);
             this.TBsenha.TabIndex = 1;
             // 
             // Blogin
             // 
-            this.Blogin.Location = new System.Drawing.Point(236, 395);
+            this.Blogin.Location = new System.Drawing.Point(1075, 851);
             this.Blogin.Name = "Blogin";
-            this.Blogin.Size = new System.Drawing.Size(75, 23);
+            this.Blogin.Size = new System.Drawing.Size(166, 55);
             this.Blogin.TabIndex = 2;
-            this.Blogin.Text = "button1";
+            this.Blogin.Text = "ENTRAR";
             this.Blogin.UseVisualStyleBackColor = true;
             this.Blogin.Click += new System.EventHandler(this.Blogin_Click);
             // 
             // Bsair
             // 
-            this.Bsair.Location = new System.Drawing.Point(236, 477);
+            this.Bsair.Location = new System.Drawing.Point(703, 851);
             this.Bsair.Name = "Bsair";
-            this.Bsair.Size = new System.Drawing.Size(75, 23);
+            this.Bsair.Size = new System.Drawing.Size(166, 55);
             this.Bsair.TabIndex = 3;
-            this.Bsair.Text = "button2";
+            this.Bsair.Text = "SAIR";
             this.Bsair.UseVisualStyleBackColor = true;
             // 
             // TBusuario
             // 
-            this.TBusuario.Location = new System.Drawing.Point(166, 144);
+            this.TBusuario.Location = new System.Drawing.Point(847, 496);
+            this.TBusuario.Multiline = true;
             this.TBusuario.Name = "TBusuario";
-            this.TBusuario.Size = new System.Drawing.Size(235, 20);
+            this.TBusuario.Size = new System.Drawing.Size(235, 31);
             this.TBusuario.TabIndex = 4;
             // 
             // Tl_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(606, 612);
+            this.BackColor = System.Drawing.Color.Snow;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.TBusuario);
             this.Controls.Add(this.Bsair);
             this.Controls.Add(this.Blogin);
