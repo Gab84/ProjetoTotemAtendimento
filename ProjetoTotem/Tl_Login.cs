@@ -33,6 +33,11 @@ namespace ProjetoTotem
             Com a confirmação do login é nescessario que o objeto tecnicoDAO puxe de banco os dados do tecnico logado em questão como:nome,id e status
 
             */
+
+            
+
+
+
             this.Close();
 
             
