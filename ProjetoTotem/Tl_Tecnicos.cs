@@ -21,17 +21,46 @@ namespace ProjetoTotem
         public Tl_Tecnicos(Tecnico UserTecnico)
         {
             InitializeComponent();
-            FBConnector Conn = new FBConnector();
-            AtendimentoDAO atendimentoDAO = new AtendimentoDAO();
+            this.Conn = new FBConnector();
+            this.atendimentoDAO = new AtendimentoDAO();
             TecnicoLogado = UserTecnico;
 
             AtualizarTela(atendimentoDAO, Conn.BDoor);
         }
 
-        
-        private void Batender_Click(object sender, EventArgs e)
+
+        private async void Batender_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                if (DataGrid_Pendentes.SelectedRows.Count > 0)
+                {
+                    // Obter o item selecionado
+                    var selectedRow = DataGrid_Pendentes.SelectedRows[0];
+                    var atendimentoSelecionado = (Atendimento)selectedRow.DataBoundItem;
+
+                    // Atualizar status e técnico
+                    atendimentoSelecionado.Status = "Em_atendimento";
+                    atendimentoSelecionado.TecnicoLogin = TecnicoLogado.login; // ou Nome, se for esse o campo usado
+
+                    // Salvar no Firebase
+                    await atendimentoDAO.AtualizarAtendimento(Conn.BDoor, atendimentoSelecionado);
+
+                    // Atualizar interface
+                    AtualizarTela(atendimentoDAO, Conn.BDoor);
+                }
+                
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Por favor, selecione um atendimento pendente.");
+            }
+
+            
+
+                
         }
 
         private void DataGrid_Pendentes_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -44,7 +73,7 @@ namespace ProjetoTotem
 
             var finalizados = await atendimentoDAO.GetAtendidos(Conn, TecnicoLogado);
             var pendentes = await atendimentoDAO.GetPendentes(Conn);
-            var EmAtendimento = await atendimentoDAO.GetEmAtendimentoTecnico(Conn,TecnicoLogado);
+            var EmAtendimento = await atendimentoDAO.GetEmAtendimentoTecnico(Conn,TecnicoLogado);//
             var prioritarios = await atendimentoDAO.GetPrioritarios(Conn,TecnicoLogado);
 
 

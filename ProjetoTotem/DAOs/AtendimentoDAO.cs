@@ -70,9 +70,15 @@ namespace ProjetoTotem
         }
 
 
+        public async Task AtualizarAtendimento(FirebaseClient conn, Atendimento atendimento)
+        {
+            await conn
+                .Child("ATENDIMENTO")
+                .Child(atendimento.Id) // certifique-se de que a classe Atendimento tem uma propriedade Id
+                .PutAsync(atendimento);
+        }
 
-        
-       
+
 
         public async Task<List<Atendimento>> GetPendentes(FirebaseClient FBconnector) =>
            (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "pendente").ToList();
