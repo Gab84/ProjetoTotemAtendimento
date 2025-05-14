@@ -27,8 +27,8 @@ namespace ProjetoTotem
             string senha = "ATD" + random.Next(1, 9999);
             atendimentoDAO.UsuarioNome = "testeatendimento";
             atendimentoDAO.Id = senha;
-            atendimentoDAO.Status = "finalizado";
-            atendimentoDAO.TecnicoLogin = "gabriel";
+            atendimentoDAO.Status = "pendente"; // Em_atendimento - finalizado - pendente
+            atendimentoDAO.TecnicoLogin = "";
             //atendimentoDAO.Prioridade = "Prioritario";
             atendimentoDAO.CadastrarAtendimento(atendimentoDAO, _firebase);
             MessageBox.Show("GERADO TESTE");

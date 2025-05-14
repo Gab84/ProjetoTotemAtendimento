@@ -80,10 +80,11 @@ namespace ProjetoTotem
             DataGrid_Pendentes.DataSource = pendentes;
             dataGrid_atendidos.DataSource = finalizados;
             dataGrid_Prioritarios.DataSource = prioritarios;
-            
+            dataGrid_EmAtendimento_T.DataSource = EmAtendimento;
+
             //dataGrid_EmAtendimento_T.DataSource = atendimento.GetEmAtendimentoTecnico(Conn,TecnicoLogado);
 
-            
+
         }
 
 
@@ -95,6 +96,40 @@ namespace ProjetoTotem
         private void dataGrid_atendidos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dataGrid_EmAtendimento_T_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private async void FINALIZAR_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGrid_EmAtendimento_T.SelectedRows.Count > 0)
+                {
+                    // Obter o item selecionado
+                    var selectedRow = dataGrid_EmAtendimento_T.SelectedRows[0];
+                    var atendimentoSelecionado = (Atendimento)selectedRow.DataBoundItem;
+
+                    // Atualizar status e técnico
+                    atendimentoSelecionado.Status = "finalizado";
+                    atendimentoSelecionado.TecnicoLogin = TecnicoLogado.login; // ou Nome, se for esse o campo usado
+
+                    // Salvar no Firebase
+                    await atendimentoDAO.AtualizarAtendimento(Conn.BDoor, atendimentoSelecionado);
+
+                    // Atualizar interface
+                    AtualizarTela(atendimentoDAO, Conn.BDoor);
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Por favor, selecione um atendimento pendente.");
+            }
         }
     }
 }

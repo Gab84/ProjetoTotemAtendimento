@@ -33,7 +33,7 @@
             this.dataGrid_EmAtendimento_T = new System.Windows.Forms.DataGridView();
             this.dataGrid_Prioritarios = new System.Windows.Forms.DataGridView();
             this.dataGrid_atendidos = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.FINALIZAR = new System.Windows.Forms.Button();
             this.Batender = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_Pendentes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_EmAtendimento_T)).BeginInit();
@@ -57,6 +57,7 @@
             this.dataGrid_EmAtendimento_T.Name = "dataGrid_EmAtendimento_T";
             this.dataGrid_EmAtendimento_T.Size = new System.Drawing.Size(497, 340);
             this.dataGrid_EmAtendimento_T.TabIndex = 1;
+            this.dataGrid_EmAtendimento_T.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_EmAtendimento_T_CellContentClick);
             // 
             // dataGrid_Prioritarios
             // 
@@ -75,14 +76,15 @@
             this.dataGrid_atendidos.TabIndex = 3;
             this.dataGrid_atendidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_atendidos_CellContentClick);
             // 
-            // button2
+            // FINALIZAR
             // 
-            this.button2.Location = new System.Drawing.Point(1550, 658);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.FINALIZAR.Location = new System.Drawing.Point(1550, 658);
+            this.FINALIZAR.Name = "FINALIZAR";
+            this.FINALIZAR.Size = new System.Drawing.Size(75, 23);
+            this.FINALIZAR.TabIndex = 5;
+            this.FINALIZAR.Text = "FINALIZAR";
+            this.FINALIZAR.UseVisualStyleBackColor = true;
+            this.FINALIZAR.Click += new System.EventHandler(this.FINALIZAR_Click);
             // 
             // Batender
             // 
@@ -105,7 +107,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.Batender);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.FINALIZAR);
             this.Controls.Add(this.dataGrid_atendidos);
             this.Controls.Add(this.dataGrid_Prioritarios);
             this.Controls.Add(this.dataGrid_EmAtendimento_T);
@@ -127,7 +129,7 @@
         private System.Windows.Forms.DataGridView dataGrid_EmAtendimento_T;
         private System.Windows.Forms.DataGridView dataGrid_Prioritarios;
         private System.Windows.Forms.DataGridView dataGrid_atendidos;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button FINALIZAR;
         private System.Windows.Forms.Button Batender;
     }
 }
