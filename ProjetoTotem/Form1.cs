@@ -67,8 +67,14 @@ namespace ProjetoTotem
         {
             Tl_Login TelaLogin = new Tl_Login();
             TelaLogin.ShowDialog();
-            UserTecnico.login = TelaLogin.login;
-            UserTecnico.senha = TelaLogin.senha;
+            if(TelaLogin.UserTecnico.Nome != null)
+            {
+
+                UserTecnico = TelaLogin.UserTecnico;
+
+            }
+            
+            
             
         }
 

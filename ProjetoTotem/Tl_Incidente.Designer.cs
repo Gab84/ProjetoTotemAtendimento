@@ -30,33 +30,33 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tl_Incidente));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TBemail = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TBnumero = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TBpatrimonio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // TBemail
             // 
-            this.textBox1.Location = new System.Drawing.Point(114, 387);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(554, 20);
-            this.textBox1.TabIndex = 0;
+            this.TBemail.Location = new System.Drawing.Point(114, 387);
+            this.TBemail.Name = "TBemail";
+            this.TBemail.Size = new System.Drawing.Size(554, 20);
+            this.TBemail.TabIndex = 0;
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // textBox2
+            // TBnumero
             // 
-            this.textBox2.Location = new System.Drawing.Point(114, 555);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(554, 20);
-            this.textBox2.TabIndex = 2;
+            this.TBnumero.Location = new System.Drawing.Point(114, 555);
+            this.TBnumero.Name = "TBnumero";
+            this.TBnumero.Size = new System.Drawing.Size(554, 20);
+            this.TBnumero.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -70,12 +70,12 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // textBox3
+            // TBpatrimonio
             // 
-            this.textBox3.Location = new System.Drawing.Point(124, 686);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(554, 20);
-            this.textBox3.TabIndex = 4;
+            this.TBpatrimonio.Location = new System.Drawing.Point(124, 686);
+            this.TBpatrimonio.Name = "TBpatrimonio";
+            this.TBpatrimonio.Size = new System.Drawing.Size(554, 20);
+            this.TBpatrimonio.TabIndex = 4;
             // 
             // label1
             // 
@@ -93,10 +93,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.TBpatrimonio);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TBnumero);
+            this.Controls.Add(this.TBemail);
             this.Name = "Tl_Incidente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tl_Incidente";
@@ -109,11 +109,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TBemail;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TBnumero;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TBpatrimonio;
         private System.Windows.Forms.Label label1;
     }
 }

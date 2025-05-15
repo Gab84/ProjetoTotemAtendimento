@@ -73,7 +73,7 @@ namespace ProjetoTotem
 
             var finalizados = await atendimentoDAO.GetAtendidos(Conn, TecnicoLogado);
             var pendentes = await atendimentoDAO.GetPendentes(Conn);
-            var EmAtendimento = await atendimentoDAO.GetEmAtendimentoTecnico(Conn,TecnicoLogado);//
+            var EmAtendimento = await atendimentoDAO.GetEmAtendimentoTecnico(Conn,TecnicoLogado);
             var prioritarios = await atendimentoDAO.GetPrioritarios(Conn,TecnicoLogado);
 
 

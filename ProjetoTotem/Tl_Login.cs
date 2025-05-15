@@ -12,11 +12,16 @@ namespace ProjetoTotem
 {
     public partial class Tl_Login : Form
     {
-        public string login;
-        public string senha;
+        public string InputLogin;
+        public string InputSenha;
+        private TecnicoDAO tecnicoDAO = new TecnicoDAO();
+        private FBConnector Coon = new FBConnector();
+        public Tecnico UserTecnico = new Tecnico();
+
         public Tl_Login()
         {
             InitializeComponent();
+
         }
 
         private void Tl_Login_Load(object sender, EventArgs e)
@@ -24,23 +29,61 @@ namespace ProjetoTotem
             
         }
 
+
+
+        private async void LGChecker(TecnicoDAO tecnicoDAO, FBConnector Coon, string InputLogin, string InputSenha)
+        {
+
+            try
+            {
+
+                UserTecnico = await tecnicoDAO.LoginChecker(Coon.BDoor, InputLogin, InputSenha);
+                
+                if (UserTecnico.Nome == null)
+                {
+                    throw new Exception();
+                }
+ 
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Usuario ou senha incorretos");
+                TBusuario.Text = string.Empty;
+                TBsenha.Text = string.Empty;
+
+            }
+
+
+
+        }
+
+
         private void Blogin_Click(object sender, EventArgs e)
         {
-            login = TBusuario.Text;
-            senha = TBsenha.Text;
+            InputLogin = TBusuario.Text;
+            InputSenha = TBsenha.Text;
 
-            /* a partir desse ponto é nescessario que aja um tratamento de verificação das credenciais pelo TecnicoDAO,para que seja confirmado o login!
-            Com a confirmação do login é nescessario que o objeto tecnicoDAO puxe de banco os dados do tecnico logado em questão como:nome,id e status
+            LGChecker(tecnicoDAO, Coon, InputLogin, InputSenha);
+            
+            if (UserTecnico.login != null)
+            {
 
-            */
-            this.Close();
+                this.Close();
 
+            }
+           
             
         }
 
         private void TBusuario_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Bsair_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

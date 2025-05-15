@@ -61,6 +61,7 @@
             this.Bsair.TabIndex = 3;
             this.Bsair.Text = "SAIR";
             this.Bsair.UseVisualStyleBackColor = true;
+            this.Bsair.Click += new System.EventHandler(this.Bsair_Click);
             // 
             // TBusuario
             // 

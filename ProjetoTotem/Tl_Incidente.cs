@@ -14,7 +14,7 @@ namespace ProjetoTotem
     public partial class Tl_Incidente: Form
     {
         AtendimentoDAO atendimentoDAO = new AtendimentoDAO();
-        FirebaseClient _firebase = new FirebaseClient("https://totematendimento-78bc9-default-rtdb.firebaseio.com/");
+        private FBConnector Coon = new FBConnector();
         public Tl_Incidente()
         {
             InitializeComponent();
@@ -25,13 +25,29 @@ namespace ProjetoTotem
             //acertar os valores
             var random = new Random();
             string senha = "ATD" + random.Next(1, 9999);
-            atendimentoDAO.UsuarioNome = "testeatendimento";
+
             atendimentoDAO.Id = senha;
-            atendimentoDAO.Status = "pendente"; // Em_atendimento - finalizado - pendente
-            atendimentoDAO.TecnicoLogin = "";
-            //atendimentoDAO.Prioridade = "Prioritario";
-            atendimentoDAO.CadastrarAtendimento(atendimentoDAO, _firebase);
-            MessageBox.Show("GERADO TESTE");
+
+            if(TBemail.Text != "" & TBnumero.Text != "" & TBpatrimonio.Text != "" )
+            {
+
+                atendimentoDAO.UsuarioEmail = TBemail.Text;
+                atendimentoDAO.Num_incidente = TBnumero.Text;
+                atendimentoDAO.Patrimonio_Maq = TBpatrimonio.Text;
+                atendimentoDAO.UsuarioNome = "testeatendimento";
+                atendimentoDAO.Status = "pendente";
+                atendimentoDAO.CadastrarAtendimento(atendimentoDAO, Coon.BDoor);
+                MessageBox.Show("GERADO TESTE");
+
+            }
+            else
+            {
+
+                MessageBox.Show("Alguns campos não foram preenchidos!");
+
+            }
+
+                      
 
         }
 
