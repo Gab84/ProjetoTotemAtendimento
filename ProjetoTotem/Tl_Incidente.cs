@@ -35,7 +35,7 @@ namespace ProjetoTotem
                 atendimentoDAO.Num_incidente = TBnumero.Text;
                 atendimentoDAO.Patrimonio_Maq = TBpatrimonio.Text;
                 atendimentoDAO.UsuarioNome = "testeatendimento";
-                atendimentoDAO.Status = "pendente";
+                atendimentoDAO.Status = "Em_espera";
                 atendimentoDAO.CadastrarAtendimento(atendimentoDAO, Coon.BDoor);
                 MessageBox.Show("GERADO TESTE");
 

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,49 +16,71 @@ namespace ProjetoTotem
     public partial class Tl_Senhas: Form
     {
 
-        //FBConnector conn;
-       // private readonly FirebaseService firebase;
+        private FBConnector Conn = new FBConnector();
+        private AtendimentoDAO atendimentoDAO = new AtendimentoDAO();
+        int contador = 0;
+        System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+
         public Tl_Senhas()
         {
             InitializeComponent();
-            FirebaseClient _firebase = new FirebaseClient("https://totematendimento-78bc9-default-rtdb.firebaseio.com/");
-            //FBConnector conn = new FBConnector();
-            
-            AtualizarTela(_firebase);
+          
+            AtualizarTela(Conn);
+
+            timer.Interval = 1000;
+            timer.Tick += new EventHandler(timerTick);
+            timer.Start();
+            //TimerStarter();
         }
 
-        
-        public async Task<List<Atendimento>> ListarAtendimentos(FirebaseClient _firebase)
+        private void TimerStarter()
+        {          
+        }
+
+        private void timerTick(object sender, EventArgs e)
         {
-            
-            var result = await _firebase
-                .Child("ATENDIMENTO")
-                .OnceAsync<Atendimento>();
 
-            return result.Select(item => item.Object).ToList();
+            AtualizarTela(Conn);
+
         }
 
-        public async Task<List<Atendimento>> GetFinalizados(FirebaseClient _firebase) =>
-           (await ListarAtendimentos(_firebase)).Where(a => a.Status == "finalizado").ToList();
-        
+        /*
+       public async Task<List<Atendimento>> ListarAtendimentos(FirebaseClient _firebase)
+       {
 
-        public async Task<Atendimento> GetEmAtendimento(FirebaseClient _firebase) =>
-            (await ListarAtendimentos(_firebase)).FirstOrDefault(a => a.Status == "em_atendimento");
+           var result = await _firebase
+               .Child("ATENDIMENTO")
+               .OnceAsync<Atendimento>();
 
-        public async Task<Atendimento> GetProximoNaFila(FirebaseClient _firebase) =>
-            (await ListarAtendimentos(_firebase)).Where(a => a.Status == "em_espera")
+           return result.Select(item => item.Object).ToList();
+       }
+
+       public async Task<List<Atendimento>> GetFinalizados(FirebaseClient _firebase) =>
+          (await ListarAtendimentos(_firebase)).Where(a => a.Status == "finalizado").ToList();
+
+
+       public async Task<Atendimento> GetEmAtendimento(FirebaseClient _firebase) =>
+           (await ListarAtendimentos(_firebase)).FirstOrDefault(a => a.Status == "em_atendimento");
+
+
+
+       */
+
+        public async Task<Atendimento> GetProximoNaFila(FBConnector Conn,AtendimentoDAO atendimentoDAO) =>
+            (await atendimentoDAO.ListarAtendimentos(Conn.BDoor)).Where(a => a.Status == "em_espera")
                                         .OrderBy(a => a.Datahora).FirstOrDefault();
-    
 
-        private async Task AtualizarTela(FirebaseClient _firebase)
+
+        private async Task AtualizarTela(FBConnector Coon)
         {
-            var emAtendimento = await GetEmAtendimento(_firebase);
-            var proximo = await GetProximoNaFila(_firebase);
-            var finalizados = await GetFinalizados(_firebase);
-
-            numSenha.Text = emAtendimento?.Id ?? "Nenhum";
+            var pendentes = await  atendimentoDAO.GetPendentes(Conn.BDoor); //GetEmAtendimento(_firebase);
+            // var proximo = await GetProximoNaFila(Conn,atendimentoDAO);  --> esse "Proximo na fila"
+            var finalizados = await atendimentoDAO.GetFinalizados(Coon.BDoor);//GetFinalizados(_firebase);
+            numSenha.Text = contador.ToString();  //emEspera[0].Id.ToString();
             //labelProximo.Text = proximo?.Id ?? "Nenhum";
-            dataGridView1.DataSource = finalizados;
+            dataGridView1.DataSource = pendentes;
+            contador++;
+
         }
 
 
@@ -73,7 +96,7 @@ namespace ProjetoTotem
         {
 
 
-            numSenha.Text = "1";
+            numSenha.Text = "";
 
             portaAtendimento.Text = "PORTA A";
 
@@ -108,5 +131,13 @@ namespace ProjetoTotem
         {
 
         }
+
+        private void Tl_Senhas_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            timer.Stop();
+
+        }
+
     }
 }

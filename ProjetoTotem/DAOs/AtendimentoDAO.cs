@@ -46,8 +46,6 @@ namespace ProjetoTotem
 
 
 
-        
-
         public async Task<List<Atendimento>> ListarAtendimentos(FirebaseClient FBconnector)
         {
             List<Atendimento> DBatendimento = new List<Atendimento>();
@@ -84,6 +82,8 @@ namespace ProjetoTotem
            (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "pendente").ToList();
 
 
+        public async Task<List<Atendimento>> GetFinalizados(FirebaseClient connector) =>
+           (await ListarAtendimentos(connector)).Where(a => a.Status == "finalizado").ToList();
 
         public async Task<List<Atendimento>> GetEmAtendimentoTecnico(FirebaseClient FBconnector,Tecnico UserTecnico) =>
            (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "Em_atendimento").Where(b => b.TecnicoLogin == UserTecnico.login).ToList();
@@ -93,12 +93,13 @@ namespace ProjetoTotem
            (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "pendente").Where(b => b.TecnicoLogin == UserTecnico.login).Where(c => c.Prioridade == "Prioritario").ToList();
         
 
-
         public async Task<List<Atendimento>> GetAtendidos(FirebaseClient FBconnector, Tecnico UserTecnico) =>
           (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "finalizado").Where(b => b.TecnicoLogin == UserTecnico.login).ToList();
         
-
         // Nos 3 metodos acima o ideial é que não seja utilizado como parametro para filtro o login do tecnico e sim talves o ID e o nome ou id e login,
+
+
+
 
 
 
