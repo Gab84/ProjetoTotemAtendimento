@@ -38,13 +38,13 @@
             // numSenha
             // 
             this.numSenha.BackColor = System.Drawing.Color.Transparent;
-            this.numSenha.Font = new System.Drawing.Font("Arial Black", 81.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numSenha.Location = new System.Drawing.Point(1213, 308);
+            this.numSenha.Font = new System.Drawing.Font("Arial Black", 78F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSenha.Location = new System.Drawing.Point(1143, 324);
             this.numSenha.Name = "numSenha";
-            this.numSenha.Size = new System.Drawing.Size(444, 165);
+            this.numSenha.Size = new System.Drawing.Size(586, 165);
             this.numSenha.TabIndex = 5;
             this.numSenha.Text = "label3";
-            this.numSenha.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.numSenha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.numSenha.Click += new System.EventHandler(this.numSenha_Click_1);
             // 
             // portaAtendimento

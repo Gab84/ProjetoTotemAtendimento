@@ -37,7 +37,8 @@ namespace ProjetoTotem
                 atendimentoDAO.UsuarioNome = "testeatendimento";
                 atendimentoDAO.Status = "Em_espera";
                 atendimentoDAO.CadastrarAtendimento(atendimentoDAO, Coon.BDoor);
-                MessageBox.Show("GERADO TESTE");
+                //MessageBox.Show("GERADO TESTE");
+                MessageBox.Show($"A senha para o seu atendimento é:{senha}");
 
             }
             else

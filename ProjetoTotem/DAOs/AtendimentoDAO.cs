@@ -23,7 +23,7 @@ namespace ProjetoTotem
 
         }
 
-        public async Task<List<Atendimento>> ListarAtendimentos2(FirebaseClient _firebase)
+        /*public async Task<List<Atendimento>> ListarAtendimentos2(FirebaseClient _firebase)
         {
             var atendimentos = await _firebase.Child("ATENDIMENTO").OnceAsync<Atendimento>();
             var lista = new List<Atendimento>();
@@ -35,6 +35,8 @@ namespace ProjetoTotem
             }
             return lista;
         }
+        */
+
 
         public async Task ExcluirAtendimento(string Id, FirebaseClient _firebase)
         {
@@ -42,7 +44,7 @@ namespace ProjetoTotem
             await _firebase.Child("ATENDIMENTO").Child(Id).DeleteAsync();
         }
         
-        // As funções acima  precisam ser avaliadas se vão ser usadas ou não no Programa!
+  
 
 
 
@@ -82,8 +84,34 @@ namespace ProjetoTotem
            (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "pendente").ToList();
 
 
-        public async Task<List<Atendimento>> GetFinalizados(FirebaseClient connector) =>
-           (await ListarAtendimentos(connector)).Where(a => a.Status == "finalizado").ToList();
+        public async Task<List<Atendimento>> GetFinalizados(FirebaseClient FBconnector) =>
+           (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "finalizado").ToList();
+
+
+        public async Task<Atendimento> GetEmAtendimento(FirebaseClient FBconnector)
+        {
+
+            Atendimento atendimento = new Atendimento();
+
+            var result = await FBconnector.Child("ATENDIMENTO").OnceAsync<Atendimento>();
+
+            foreach(var item in result)
+            {
+                if(item.Object.Status == "Em_atendimento")
+                {
+
+                    atendimento = item.Object;
+
+                }
+
+
+            }
+
+            return atendimento;
+
+        }
+           
+
 
         public async Task<List<Atendimento>> GetEmAtendimentoTecnico(FirebaseClient FBconnector,Tecnico UserTecnico) =>
            (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "Em_atendimento").Where(b => b.TecnicoLogin == UserTecnico.login).ToList();
@@ -96,7 +124,7 @@ namespace ProjetoTotem
         public async Task<List<Atendimento>> GetAtendidos(FirebaseClient FBconnector, Tecnico UserTecnico) =>
           (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "finalizado").Where(b => b.TecnicoLogin == UserTecnico.login).ToList();
         
-        // Nos 3 metodos acima o ideial é que não seja utilizado como parametro para filtro o login do tecnico e sim talves o ID e o nome ou id e login,
+       
 
 
 

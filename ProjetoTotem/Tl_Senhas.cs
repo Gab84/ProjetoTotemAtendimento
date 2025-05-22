@@ -20,6 +20,7 @@ namespace ProjetoTotem
         private AtendimentoDAO atendimentoDAO = new AtendimentoDAO();
         int contador = 0;
         System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+        private Atendimento atendimentoAtual = new Atendimento();
 
         public Tl_Senhas()
         {
@@ -73,13 +74,17 @@ namespace ProjetoTotem
 
         private async Task AtualizarTela(FBConnector Coon)
         {
+            
+            
             var pendentes = await  atendimentoDAO.GetPendentes(Conn.BDoor); //GetEmAtendimento(_firebase);
             // var proximo = await GetProximoNaFila(Conn,atendimentoDAO);  --> esse "Proximo na fila"
-            var finalizados = await atendimentoDAO.GetFinalizados(Coon.BDoor);//GetFinalizados(_firebase);
-            numSenha.Text = contador.ToString();  //emEspera[0].Id.ToString();
+            //var finalizados = await atendimentoDAO.GetFinalizados(Coon.BDoor);//GetFinalizados(_firebase);
+            
+            atendimentoAtual = await atendimentoDAO.GetEmAtendimento(Conn.BDoor);
+            numSenha.Text = atendimentoAtual.Id;  //emEspera[0].Id.ToString();
             //labelProximo.Text = proximo?.Id ?? "Nenhum";
             dataGridView1.DataSource = pendentes;
-            contador++;
+            //contador++;
 
         }
 
