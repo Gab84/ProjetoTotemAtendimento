@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,6 +43,7 @@ namespace ProjetoTotem
         {
 
             AtualizarTela(Conn);
+            
 
         }
 
@@ -82,6 +84,7 @@ namespace ProjetoTotem
             
             atendimentoAtual = await atendimentoDAO.GetEmAtendimento(Conn.BDoor);
             numSenha.Text = atendimentoAtual.Id;  //emEspera[0].Id.ToString();
+            //SystemSounds.Exclamation.Play();
             //labelProximo.Text = proximo?.Id ?? "Nenhum";
             dataGridView1.DataSource = pendentes;
             //contador++;

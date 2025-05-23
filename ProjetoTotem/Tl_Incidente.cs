@@ -25,6 +25,7 @@ namespace ProjetoTotem
             //acertar os valores
             var random = new Random();
             string senha = "ATD" + random.Next(1, 9999);
+            DateTime dataAtual = DateTime.Now;
 
             atendimentoDAO.Id = senha;
 
@@ -35,7 +36,9 @@ namespace ProjetoTotem
                 atendimentoDAO.Num_incidente = TBnumero.Text;
                 atendimentoDAO.Patrimonio_Maq = TBpatrimonio.Text;
                 atendimentoDAO.UsuarioNome = "testeatendimento";
-                atendimentoDAO.Status = "Em_espera";
+                atendimentoDAO.Status = "pendente";
+                atendimentoDAO.Datahora = dataAtual.ToString("g");
+                atendimentoDAO.Patrimonio_Maq = TBpatrimonio.Text;
                 atendimentoDAO.CadastrarAtendimento(atendimentoDAO, Coon.BDoor);
                 //MessageBox.Show("GERADO TESTE");
                 MessageBox.Show($"A senha para o seu atendimento é:{senha}");

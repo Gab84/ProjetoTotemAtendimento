@@ -17,7 +17,7 @@ namespace ProjetoTotem
         private FBConnector Conn;
         private AtendimentoDAO atendimentoDAO;
         private Tecnico TecnicoLogado;
-
+        
         public Tl_Tecnicos(Tecnico UserTecnico)
         {
             InitializeComponent();
