@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tela_etiqueta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tela_etiqueta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tem um problema" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tem um problema.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -126,9 +129,6 @@
   </data>
   <data name="arcelorpng" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arcelorpng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bt_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bt_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bt_41" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt_41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,6 +148,9 @@
   <data name="linharodape" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\linharodape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bt_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bt_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="img_bv" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_bv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,13 +160,22 @@
   <data name="bt_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt_31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bt_3redondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bt_3redondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tela_requisição_aprovada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tela_requisição_aprovada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bt_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt_51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bt_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt_21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bt_3redondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bt_3redondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tela_fui_chamado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tela_fui_chamado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tela_gerar_senha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tela_gerar_senha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -243,5 +243,17 @@
   <ItemGroup>
     <None Include="Resources\bt_3redondo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tela_etiqueta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tela_fui_chamado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tela_requisição_aprovada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tela_gerar_senha.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

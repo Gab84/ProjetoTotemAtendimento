@@ -35,13 +35,12 @@
             this.TBnumero = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TBpatrimonio = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // TBemail
             // 
-            this.TBemail.Location = new System.Drawing.Point(114, 387);
+            this.TBemail.Location = new System.Drawing.Point(722, 406);
             this.TBemail.Name = "TBemail";
             this.TBemail.Size = new System.Drawing.Size(554, 20);
             this.TBemail.TabIndex = 0;
@@ -53,7 +52,7 @@
             // 
             // TBnumero
             // 
-            this.TBnumero.Location = new System.Drawing.Point(114, 555);
+            this.TBnumero.Location = new System.Drawing.Point(936, 510);
             this.TBnumero.Name = "TBnumero";
             this.TBnumero.Size = new System.Drawing.Size(554, 20);
             this.TBnumero.TabIndex = 2;
@@ -63,7 +62,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(921, 750);
+            this.pictureBox1.Location = new System.Drawing.Point(1152, 702);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(364, 116);
             this.pictureBox1.TabIndex = 3;
@@ -72,27 +71,17 @@
             // 
             // TBpatrimonio
             // 
-            this.TBpatrimonio.Location = new System.Drawing.Point(124, 686);
+            this.TBpatrimonio.Location = new System.Drawing.Point(1198, 604);
             this.TBpatrimonio.Name = "TBpatrimonio";
-            this.TBpatrimonio.Size = new System.Drawing.Size(554, 20);
+            this.TBpatrimonio.Size = new System.Drawing.Size(384, 20);
             this.TBpatrimonio.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(146, 660);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "G da maquina";
             // 
             // Tl_Incidente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ProjetoTotem.Properties.Resources.tela_gerar_senha;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.TBpatrimonio);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TBnumero);
@@ -114,6 +103,5 @@
         private System.Windows.Forms.TextBox TBnumero;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox TBpatrimonio;
-        private System.Windows.Forms.Label label1;
     }
 }
