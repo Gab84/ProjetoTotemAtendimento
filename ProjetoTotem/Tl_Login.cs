@@ -68,8 +68,23 @@ namespace ProjetoTotem
             
             if (UserTecnico.login != null)
             {
+                
+                var Porta = MessageBox.Show("Em qual Porta Voce esta atendendo?","selecione a porta!",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                
+                if (Porta == DialogResult.Yes)
+                {
+                    UserTecnico.PortaAtual = "Porta_A";
 
-                this.Close();
+                }
+                else if(Porta == DialogResult.No)
+                {
+
+                    UserTecnico.PortaAtual = "Porta_B";
+
+                }
+
+                
+                    this.Close();
 
             }
            

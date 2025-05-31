@@ -42,6 +42,7 @@ namespace ProjetoTotem
 
                     // Atualizar status e técnico
                     atendimentoSelecionado.Status = "Em_atendimento";
+                    atendimentoSelecionado.portaAtendido = TecnicoLogado.PortaAtual;
                     atendimentoSelecionado.TecnicoLogin = TecnicoLogado.login; // ou Nome, se for esse o campo usado
 
                     // Salvar no Firebase

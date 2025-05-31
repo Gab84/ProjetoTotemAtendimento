@@ -183,6 +183,26 @@ namespace ProjetoTotem.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_impressora {
+            get {
+                object obj = ResourceManager.GetObject("icon impressora", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_impressora1 {
+            get {
+                object obj = ResourceManager.GetObject("icon impressora1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap img_bv {
             get {
                 object obj = ResourceManager.GetObject("img_bv", resourceCulture);
@@ -246,6 +266,16 @@ namespace ProjetoTotem.Properties {
         internal static System.Drawing.Bitmap tela_requisição_aprovada {
             get {
                 object obj = ResourceManager.GetObject("tela_requisição_aprovada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tela_senhas {
+            get {
+                object obj = ResourceManager.GetObject("tela_senhas", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

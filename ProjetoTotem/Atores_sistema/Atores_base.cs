@@ -27,6 +27,8 @@ namespace ProjetoTotem
         public string Status { get; set; }
 
         public string Prioridade { get; set; }
+
+        public string portaAtendido { get; set; }
     }
 
     public class Tecnico
@@ -41,7 +43,7 @@ namespace ProjetoTotem
 
         public string status { get; set;}
 
-
+        public string PortaAtual { get; set; }
     }
 
     

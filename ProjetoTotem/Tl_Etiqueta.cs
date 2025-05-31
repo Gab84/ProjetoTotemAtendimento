@@ -15,6 +15,9 @@ namespace ProjetoTotem
         public Tl_Etiqueta()
         {
             InitializeComponent();
+            
         }
+        
+        
     }
 }

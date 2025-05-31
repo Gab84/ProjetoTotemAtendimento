@@ -14,9 +14,13 @@ namespace ProjetoTotem
         [STAThread]
         static void Main()
         {
+            MessageBoxManager.Yes = "PORTA A";
+            MessageBoxManager.No = "PORTA B";
+            MessageBoxManager.Register();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            
         }
     }
 }

@@ -88,10 +88,10 @@ namespace ProjetoTotem
            (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "finalizado").ToList();
 
 
-        public async Task<Atendimento> GetEmAtendimento(FirebaseClient FBconnector)
+        public async Task<List<Atendimento>> GetEmAtendimento(FirebaseClient FBconnector)
         {
 
-            Atendimento atendimento = new Atendimento();
+            List<Atendimento> atendimento = new List<Atendimento>();
 
             var result = await FBconnector.Child("ATENDIMENTO").OnceAsync<Atendimento>();
 
@@ -100,7 +100,7 @@ namespace ProjetoTotem
                 if(item.Object.Status == "Em_atendimento")
                 {
 
-                    atendimento = item.Object;
+                    atendimento.Add(item.Object);
 
                 }
 
