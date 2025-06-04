@@ -32,31 +32,47 @@ namespace ProjetoTotem
         private async void Batender_Click(object sender, EventArgs e)
         {
 
-            try
+            
+            if(dataGrid_EmAtendimento_T.ColumnCount > 0)
             {
-                if (DataGrid_Pendentes.SelectedRows.Count > 0)
+
+
+                try
                 {
-                    // Obter o item selecionado
-                    var selectedRow = DataGrid_Pendentes.SelectedRows[0];
-                    var atendimentoSelecionado = (Atendimento)selectedRow.DataBoundItem;
+                    if (DataGrid_Pendentes.SelectedRows.Count > 0)
+                    {
+                        // Obter o item selecionado
+                        var selectedRow = DataGrid_Pendentes.SelectedRows[0];
+                        var atendimentoSelecionado = (Atendimento)selectedRow.DataBoundItem;
 
-                    // Atualizar status e técnico
-                    atendimentoSelecionado.Status = "Em_atendimento";
-                    atendimentoSelecionado.portaAtendido = TecnicoLogado.PortaAtual;
-                    atendimentoSelecionado.TecnicoLogin = TecnicoLogado.login; // ou Nome, se for esse o campo usado
+                        // Atualizar status e técnico
+                        atendimentoSelecionado.Status = "Em_atendimento";
+                        atendimentoSelecionado.portaAtendido = TecnicoLogado.PortaAtual;
+                        atendimentoSelecionado.TecnicoLogin = TecnicoLogado.login; // ou Nome, se for esse o campo usado
 
-                    // Salvar no Firebase
-                    await atendimentoDAO.AtualizarAtendimento(Conn.BDoor, atendimentoSelecionado);
+                        // Salvar no Firebase
+                        await atendimentoDAO.AtualizarAtendimento(Conn.BDoor, atendimentoSelecionado);
 
-                    // Atualizar interface
-                    AtualizarTela(atendimentoDAO, Conn.BDoor);
+                        // Atualizar interface
+                        AtualizarTela(atendimentoDAO, Conn.BDoor);
+                        //Batender.Enabled = false;
+                    }
+
                 }
-                
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Por favor, selecione um atendimento pendente.");
+                }
+
+
             }
 
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Por favor, selecione um atendimento pendente.");
+
+                dataGrid_EmAtendimento_T.Enabled = false;
+
             }
 
             
@@ -82,6 +98,12 @@ namespace ProjetoTotem
             dataGrid_atendidos.DataSource = finalizados;
             dataGrid_Prioritarios.DataSource = prioritarios;
             dataGrid_EmAtendimento_T.DataSource = EmAtendimento;
+
+            if(dataGrid_EmAtendimento_T.RowCount > 0)
+            {
+                Batender.Enabled = false;
+
+            }
 
             //dataGrid_EmAtendimento_T.DataSource = atendimento.GetEmAtendimentoTecnico(Conn,TecnicoLogado);
 
@@ -123,6 +145,9 @@ namespace ProjetoTotem
 
                     // Atualizar interface
                     AtualizarTela(atendimentoDAO, Conn.BDoor);
+
+                    
+
                 }
 
             }
@@ -131,6 +156,14 @@ namespace ProjetoTotem
             {
                 MessageBox.Show("Por favor, selecione um atendimento pendente.");
             }
+
+            if(dataGrid_EmAtendimento_T.RowCount == 0)
+            {
+
+                dataGrid_EmAtendimento_T.Enabled = true;
+
+            }
+
         }
     }
 }
