@@ -178,3 +178,5 @@ C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões
 C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\V2.3\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoT.A76B6C43.Up2Date
 C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\V2.3\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.exe
 C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\V2.3\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.pdb
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\V2.3\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_etiquetaPronta.resources
+C:\Newnamet\provisorios\Analise e Projeto de sistemas\trabalho software\Versões_projeto\V2.3\ProjetoTotemAtendimento\ProjetoTotem\obj\Debug\ProjetoTotem.Tl_Qrcode_AbrirChamado.resources

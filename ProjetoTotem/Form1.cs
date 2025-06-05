@@ -30,37 +30,37 @@ namespace ProjetoTotem
 
         private void bt_problema_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Teste");
+            
             Tl_Incidente TelaIncidente = new Tl_Incidente();
             TelaIncidente.Show();
         }
 
         private void bt_chamado_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Teste6");
+            
             Tl_Chamado TelaChamado = new Tl_Chamado();
             TelaChamado.Show();
         }
 
         private void bt_etiqueta_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Teste3");
+            
             Tl_Etiqueta TelaEtiqueta = new Tl_Etiqueta();
             TelaEtiqueta.Show();
         }
 
         private void bt_requisicao_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Teste5");
-            MessageBox.Show("Teste5");
             Tl_Requisicao TelaRequisicao = new Tl_Requisicao();
             TelaRequisicao.Show();
         }
 
         private void bt_incidente_Click(object sender, EventArgs e)
         {
-            Tl_Senhas TelaSenhas = new Tl_Senhas();
-            TelaSenhas.Show();
+            
+            Tl_Qrcode_AbrirChamado Tela_QR_Code = new Tl_Qrcode_AbrirChamado();
+           
+            Tela_QR_Code.Show();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -71,8 +71,24 @@ namespace ProjetoTotem
             {
 
                 UserTecnico = TelaLogin.UserTecnico;
+                if(UserTecnico.Nome != "Tela de senhas")
+                {
+
+                    Tl_Tecnicos TelaTecnicos = new Tl_Tecnicos(UserTecnico);
+                    TelaTecnicos.Show();
+
+                }
+                else
+                {
+
+                    Tl_Senhas TelaSenhas = new Tl_Senhas();
+                    TelaSenhas.Show();
+
+                }
 
             }
+
+
             
             
             
@@ -80,8 +96,7 @@ namespace ProjetoTotem
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Tl_Tecnicos TelaTecnicos = new Tl_Tecnicos(UserTecnico);
-            TelaTecnicos.Show();
+            
         }
     }
 }

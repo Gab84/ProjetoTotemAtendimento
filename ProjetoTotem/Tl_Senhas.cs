@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Media;
 using System.Net;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,8 +28,8 @@ namespace ProjetoTotem
         public Tl_Senhas()
         {
             InitializeComponent();
-          
-            AtualizarTela(Conn);
+
+            metodo();
 
             timer.Interval = 1000;
             timer.Tick += new EventHandler(timerTick);
@@ -43,7 +44,7 @@ namespace ProjetoTotem
         private void timerTick(object sender, EventArgs e)
         {
 
-            AtualizarTela(Conn);
+            metodo();
             
 
         }
@@ -74,31 +75,53 @@ namespace ProjetoTotem
             (await atendimentoDAO.ListarAtendimentos(Conn.BDoor)).Where(a => a.Status == "em_espera")
                                         .OrderBy(a => a.Datahora).FirstOrDefault();
 
+        private Task metodo()
+        {
 
+            return AtualizarTela(Conn);
+
+        }
+        
         private async Task AtualizarTela(FBConnector Coon)
         {
             List<Atendimento> EmAtendimento = new List<Atendimento>();
 
-            var pendentes = await  atendimentoDAO.GetPendentes(Conn.BDoor); //GetEmAtendimento(_firebase);
+            var finalizados = await  atendimentoDAO.GetFinalizados(Conn.BDoor); //GetEmAtendimento(_firebase);
                                                                             // var proximo = await GetProximoNaFila(Conn,atendimentoDAO);  --> esse "Proximo na fila"
                                                                             //var finalizados = await atendimentoDAO.GetFinalizados(Coon.BDoor);//GetFinalizados(_firebase);
             
 
             EmAtendimento = await atendimentoDAO.GetEmAtendimento(Coon.BDoor);
-            numSenha.Text = EmAtendimento[0].Id;  //emEspera[0].Id.ToString();
-            numSenha2.Text = EmAtendimento[1].Id ;
+            //MessageBox.Show($"ID{EmAtendimento[1].Id}");
 
+
+            numSenha.Text = EmAtendimento[0].Id;  //emEspera[0].Id.ToString();
+            if (EmAtendimento.Count == 2)
+            {
+
+                numSenha2.Text = EmAtendimento[1].Id;
+
+            }
 
             if (EmAtendimento[0].portaAtendido == "Porta_A")
             {
                 NumSenhaPA.Text = EmAtendimento[0].Id;
-                NumSenhaPB.Text = EmAtendimento[1].Id;
+                if(EmAtendimento.Count == 2)
+                {
+                    NumSenhaPB.Text = EmAtendimento[1].Id;
 
+                }
+                
             }
 
-            else
+            else 
             {
-                NumSenhaPA.Text = EmAtendimento[1].Id;
+                if (EmAtendimento.Count == 2)
+                {
+                    NumSenhaPA.Text = EmAtendimento[1].Id;
+
+                }
+
                 NumSenhaPB.Text = EmAtendimento[0].Id;
 
             }
@@ -106,13 +129,13 @@ namespace ProjetoTotem
             // Para que o  codigo acima funcione corretamente assume-se que havera apenas dois atendimentos com status "em_atendimento" no banco e que ambos estarão separados por 
             // Porta_A e Porta_B, isso não é o caso atualmente pois não a nenhum filtro de input posto no sistema de login para impedir que dois tecnicos
             // selecionem a opção de estarem na porta A por exemplo!
-            
+
             //Alem disso tambem não há nenhum mecanismo atualmente que impeça que o tecnico selecione para atender mais que um chamado!
 
 
             //SystemSounds.Exclamation.Play();
             //labelProximo.Text = proximo?.Id ?? "Nenhum";
-            dataGridView1.DataSource = pendentes;
+            dataGrid_Concluidos.DataSource = finalizados;
             //contador++;
 
         }

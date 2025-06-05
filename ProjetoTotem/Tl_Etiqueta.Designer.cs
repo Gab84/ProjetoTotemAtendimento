@@ -46,6 +46,7 @@
             this.ImprimirETQ.Size = new System.Drawing.Size(111, 129);
             this.ImprimirETQ.TabIndex = 0;
             this.ImprimirETQ.UseVisualStyleBackColor = false;
+            this.ImprimirETQ.Click += new System.EventHandler(this.ImprimirETQ_Click);
             // 
             // Tl_Etiqueta
             // 
@@ -58,6 +59,7 @@
             this.Name = "Tl_Etiqueta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tl_Etiqueta";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

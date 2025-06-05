@@ -66,7 +66,7 @@ namespace ProjetoTotem
 
             LGChecker(tecnicoDAO, Coon, InputLogin, InputSenha);
             
-            if (UserTecnico.login != null)
+            if (UserTecnico.login != null & UserTecnico.Nome != "Tela de senhas")
             {
                 
                 var Porta = MessageBox.Show("Em qual Porta Voce esta atendendo?","selecione a porta!",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
@@ -84,11 +84,11 @@ namespace ProjetoTotem
                 }
 
                 
-                    this.Close();
+                this.Close();
 
             }
-           
-            
+
+            this.Close();
         }
 
         private void TBusuario_TextChanged(object sender, EventArgs e)

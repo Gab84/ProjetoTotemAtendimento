@@ -56,7 +56,7 @@ namespace ProjetoTotem
 
         public async Task CadastrarUsuario(Tecnico UserTecnico, FirebaseClient _firebase)
         {
-            await _firebase.Child("USER").Child(UserTecnico.Id).PutAsync(UserTecnico);
+            await _firebase.Child("USERS").Child(UserTecnico.Id).PutAsync(UserTecnico);
 
         }
 

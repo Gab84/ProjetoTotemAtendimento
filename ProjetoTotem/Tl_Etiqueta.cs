@@ -17,7 +17,11 @@ namespace ProjetoTotem
             InitializeComponent();
             
         }
-        
-        
+
+        private void ImprimirETQ_Click(object sender, EventArgs e)
+        {
+            Tl_etiquetaPronta tela_EtiquetaPronta = new Tl_etiquetaPronta();
+            tela_EtiquetaPronta.ShowDialog();
+        }
     }
 }

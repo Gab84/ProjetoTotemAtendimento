@@ -114,6 +114,7 @@
             this.Controls.Add(this.DataGrid_Pendentes);
             this.Name = "Tl_Tecnicos";
             this.Text = "Tl_Tecnicos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Tl_Tecnicos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_Pendentes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_EmAtendimento_T)).EndInit();

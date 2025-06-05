@@ -15,6 +15,7 @@ namespace ProjetoTotem
     {
         AtendimentoDAO atendimentoDAO = new AtendimentoDAO();
         private FBConnector Coon = new FBConnector();
+        private TecnicoDAO tecnicoCadastro = new TecnicoDAO();
         public Tl_Incidente()
         {
             InitializeComponent();
@@ -42,6 +43,8 @@ namespace ProjetoTotem
                 atendimentoDAO.CadastrarAtendimento(atendimentoDAO, Coon.BDoor);
                 //MessageBox.Show("GERADO TESTE");
                 MessageBox.Show($"A senha para o seu atendimento é:{senha}");
+
+                
 
             }
             else

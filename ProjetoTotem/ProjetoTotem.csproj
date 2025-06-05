@@ -37,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -106,6 +107,12 @@
     <Compile Include="Tl_Etiqueta.Designer.cs">
       <DependentUpon>Tl_Etiqueta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tl_etiquetaPronta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tl_etiquetaPronta.Designer.cs">
+      <DependentUpon>Tl_etiquetaPronta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tl_Incidente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +124,12 @@
     </Compile>
     <Compile Include="Tl_Login.Designer.cs">
       <DependentUpon>Tl_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tl_Qrcode_AbrirChamado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tl_Qrcode_AbrirChamado.Designer.cs">
+      <DependentUpon>Tl_Qrcode_AbrirChamado.cs</DependentUpon>
     </Compile>
     <Compile Include="Tl_Requisicao.cs">
       <SubType>Form</SubType>
@@ -155,11 +168,17 @@
     <EmbeddedResource Include="Tl_Etiqueta.resx">
       <DependentUpon>Tl_Etiqueta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tl_etiquetaPronta.resx">
+      <DependentUpon>Tl_etiquetaPronta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tl_Incidente.resx">
       <DependentUpon>Tl_Incidente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tl_Login.resx">
       <DependentUpon>Tl_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tl_Qrcode_AbrirChamado.resx">
+      <DependentUpon>Tl_Qrcode_AbrirChamado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tl_Requisicao.resx">
       <DependentUpon>Tl_Requisicao.cs</DependentUpon>
@@ -264,6 +283,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon impressora1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tela_imprimir_etiqueta_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qrcode_img.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -233,6 +233,16 @@ namespace ProjetoTotem.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap qrcode_img {
+            get {
+                object obj = ResourceManager.GetObject("qrcode_img", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tela_etiqueta {
             get {
                 object obj = ResourceManager.GetObject("tela_etiqueta", resourceCulture);
@@ -256,6 +266,16 @@ namespace ProjetoTotem.Properties {
         internal static System.Drawing.Bitmap tela_gerar_senha {
             get {
                 object obj = ResourceManager.GetObject("tela_gerar_senha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tela_imprimir_etiqueta_ {
+            get {
+                object obj = ResourceManager.GetObject("tela_imprimir_etiqueta_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

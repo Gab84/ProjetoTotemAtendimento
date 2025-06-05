@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.numSenha = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGrid_Concluidos = new System.Windows.Forms.DataGridView();
             this.numSenha2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.NumSenhaPA = new System.Windows.Forms.Label();
             this.NumSenhaPB = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Concluidos)).BeginInit();
             this.SuspendLayout();
             // 
             // numSenha
@@ -50,16 +50,16 @@
             this.numSenha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.numSenha.Click += new System.EventHandler(this.numSenha_Click_1);
             // 
-            // dataGridView1
+            // dataGrid_Concluidos
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Azure;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(96, 236);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 100;
-            this.dataGridView1.Size = new System.Drawing.Size(749, 745);
-            this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGrid_Concluidos.BackgroundColor = System.Drawing.Color.Azure;
+            this.dataGrid_Concluidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid_Concluidos.Location = new System.Drawing.Point(96, 236);
+            this.dataGrid_Concluidos.Name = "dataGrid_Concluidos";
+            this.dataGrid_Concluidos.RowHeadersWidth = 100;
+            this.dataGrid_Concluidos.Size = new System.Drawing.Size(749, 745);
+            this.dataGrid_Concluidos.TabIndex = 1;
+            this.dataGrid_Concluidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // numSenha2
             // 
@@ -131,20 +131,20 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numSenha2);
             this.Controls.Add(this.numSenha);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGrid_Concluidos);
             this.Name = "Tl_Senhas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tl_Senhas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Tl_Senhas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Concluidos)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Label numSenha;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGrid_Concluidos;
         private System.Windows.Forms.Label numSenha2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label NumSenhaPA;
