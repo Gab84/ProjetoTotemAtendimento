@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Newnamet\\provisorios\\Analise e Projeto de sistemas\\trabalho software\\Vers\u00F5es_projeto\\V2.3\\ProjetoTotemAtendimento\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5ECE707-4D0C-443C-B637-18B0D2C26520}|ProjetoTotem\\ProjetoTotem.csproj|c:\\newnamet\\provisorios\\analise e projeto de sistemas\\trabalho software\\vers\u00F5es_projeto\\v2.3\\projetototematendimento\\projetototem\\tl_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5ECE707-4D0C-443C-B637-18B0D2C26520}|ProjetoTotem\\ProjetoTotem.csproj|solutionrelative:projetototem\\tl_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5ECE707-4D0C-443C-B637-18B0D2C26520}|ProjetoTotem\\ProjetoTotem.csproj|c:\\newnamet\\provisorios\\analise e projeto de sistemas\\trabalho software\\vers\u00F5es_projeto\\v2.3\\projetototematendimento\\projetototem\\tl_etiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5ECE707-4D0C-443C-B637-18B0D2C26520}|ProjetoTotem\\ProjetoTotem.csproj|solutionrelative:projetototem\\tl_etiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5ECE707-4D0C-443C-B637-18B0D2C26520}|ProjetoTotem\\ProjetoTotem.csproj|c:\\newnamet\\provisorios\\analise e projeto de sistemas\\trabalho software\\vers\u00F5es_projeto\\v2.3\\projetototematendimento\\projetototem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5ECE707-4D0C-443C-B637-18B0D2C26520}|ProjetoTotem\\ProjetoTotem.csproj|solutionrelative:projetototem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5ECE707-4D0C-443C-B637-18B0D2C26520}|ProjetoTotem\\ProjetoTotem.csproj|c:\\newnamet\\provisorios\\analise e projeto de sistemas\\trabalho software\\vers\u00F5es_projeto\\v2.3\\projetototematendimento\\projetototem\\tl_incidente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5ECE707-4D0C-443C-B637-18B0D2C26520}|ProjetoTotem\\ProjetoTotem.csproj|solutionrelative:projetototem\\tl_incidente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5ECE707-4D0C-443C-B637-18B0D2C26520}|ProjetoTotem\\ProjetoTotem.csproj|c:\\newnamet\\provisorios\\analise e projeto de sistemas\\trabalho software\\vers\u00F5es_projeto\\v2.3\\projetototematendimento\\projetototem\\tl_incidente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5ECE707-4D0C-443C-B637-18B0D2C26520}|ProjetoTotem\\ProjetoTotem.csproj|solutionrelative:projetototem\\tl_incidente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,42 +66,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Tl_Incidente.cs",
-              "DocumentMoniker": "C:\\Newnamet\\provisorios\\Analise e Projeto de sistemas\\trabalho software\\Vers\u00F5es_projeto\\V2.3\\ProjetoTotemAtendimento\\ProjetoTotem\\Tl_Incidente.cs",
-              "RelativeDocumentMoniker": "ProjetoTotem\\Tl_Incidente.cs",
-              "ToolTip": "C:\\Newnamet\\provisorios\\Analise e Projeto de sistemas\\trabalho software\\Vers\u00F5es_projeto\\V2.3\\ProjetoTotemAtendimento\\ProjetoTotem\\Tl_Incidente.cs",
-              "RelativeToolTip": "ProjetoTotem\\Tl_Incidente.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwC4AAAAQAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Tl_Etiqueta.cs [Design]",
+              "DocumentMoniker": "C:\\Newnamet\\provisorios\\Analise e Projeto de sistemas\\trabalho software\\Vers\u00F5es_projeto\\V2.3\\ProjetoTotemAtendimento\\ProjetoTotem\\Tl_Etiqueta.cs",
+              "RelativeDocumentMoniker": "ProjetoTotem\\Tl_Etiqueta.cs",
+              "ToolTip": "C:\\Newnamet\\provisorios\\Analise e Projeto de sistemas\\trabalho software\\Vers\u00F5es_projeto\\V2.3\\ProjetoTotemAtendimento\\ProjetoTotem\\Tl_Etiqueta.cs [Design]",
+              "RelativeToolTip": "ProjetoTotem\\Tl_Etiqueta.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T00:26:40.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T00:45:43.623Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Newnamet\\provisorios\\Analise e Projeto de sistemas\\trabalho software\\Vers\u00F5es_projeto\\V2.3\\ProjetoTotemAtendimento\\ProjetoTotem\\Form1.cs",
-              "RelativeDocumentMoniker": "ProjetoTotem\\Form1.cs",
-              "ToolTip": "C:\\Newnamet\\provisorios\\Analise e Projeto de sistemas\\trabalho software\\Vers\u00F5es_projeto\\V2.3\\ProjetoTotemAtendimento\\ProjetoTotem\\Form1.cs",
-              "RelativeToolTip": "ProjetoTotem\\Form1.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAuwEcAAAAAAAAAAAAAAA==",
+              "Title": "Tl_Incidente.cs [Design]",
+              "DocumentMoniker": "C:\\Newnamet\\provisorios\\Analise e Projeto de sistemas\\trabalho software\\Vers\u00F5es_projeto\\V2.3\\ProjetoTotemAtendimento\\ProjetoTotem\\Tl_Incidente.cs",
+              "RelativeDocumentMoniker": "ProjetoTotem\\Tl_Incidente.cs",
+              "ToolTip": "C:\\Newnamet\\provisorios\\Analise e Projeto de sistemas\\trabalho software\\Vers\u00F5es_projeto\\V2.3\\ProjetoTotemAtendimento\\ProjetoTotem\\Tl_Incidente.cs [Design]",
+              "RelativeToolTip": "ProjetoTotem\\Tl_Incidente.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T23:58:18.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Tl_Login.cs",
-              "DocumentMoniker": "C:\\Newnamet\\provisorios\\Analise e Projeto de sistemas\\trabalho software\\Vers\u00F5es_projeto\\V2.3\\ProjetoTotemAtendimento\\ProjetoTotem\\Tl_Login.cs",
-              "RelativeDocumentMoniker": "ProjetoTotem\\Tl_Login.cs",
-              "ToolTip": "C:\\Newnamet\\provisorios\\Analise e Projeto de sistemas\\trabalho software\\Vers\u00F5es_projeto\\V2.3\\ProjetoTotemAtendimento\\ProjetoTotem\\Tl_Login.cs",
-              "RelativeToolTip": "ProjetoTotem\\Tl_Login.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAwwFgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T00:25:31.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T00:18:20.882Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

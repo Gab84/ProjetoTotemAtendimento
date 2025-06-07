@@ -84,6 +84,7 @@
             this.Controls.Add(this.TBsenha);
             this.Name = "Tl_Login";
             this.Text = "Tl_Login";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Tl_Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

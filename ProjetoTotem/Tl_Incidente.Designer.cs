@@ -35,14 +35,22 @@
             this.TBnumero = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TBpatrimonio = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // TBemail
             // 
-            this.TBemail.Location = new System.Drawing.Point(722, 406);
+            this.TBemail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.TBemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TBemail.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBemail.Location = new System.Drawing.Point(726, 394);
+            this.TBemail.Margin = new System.Windows.Forms.Padding(0);
+            this.TBemail.MaxLength = 23;
             this.TBemail.Name = "TBemail";
-            this.TBemail.Size = new System.Drawing.Size(554, 20);
+            this.TBemail.Size = new System.Drawing.Size(421, 34);
             this.TBemail.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -52,9 +60,14 @@
             // 
             // TBnumero
             // 
-            this.TBnumero.Location = new System.Drawing.Point(936, 510);
+            this.TBnumero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.TBnumero.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TBnumero.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
+            this.TBnumero.Location = new System.Drawing.Point(937, 501);
+            this.TBnumero.Margin = new System.Windows.Forms.Padding(0);
+            this.TBnumero.MaxLength = 22;
             this.TBnumero.Name = "TBnumero";
-            this.TBnumero.Size = new System.Drawing.Size(554, 20);
+            this.TBnumero.Size = new System.Drawing.Size(398, 34);
             this.TBnumero.TabIndex = 2;
             // 
             // pictureBox1
@@ -71,10 +84,48 @@
             // 
             // TBpatrimonio
             // 
-            this.TBpatrimonio.Location = new System.Drawing.Point(1198, 604);
+            this.TBpatrimonio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.TBpatrimonio.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TBpatrimonio.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
+            this.TBpatrimonio.Location = new System.Drawing.Point(1194, 594);
+            this.TBpatrimonio.Margin = new System.Windows.Forms.Padding(0);
+            this.TBpatrimonio.MaxLength = 20;
             this.TBpatrimonio.Name = "TBpatrimonio";
-            this.TBpatrimonio.Size = new System.Drawing.Size(384, 20);
+            this.TBpatrimonio.Size = new System.Drawing.Size(384, 34);
             this.TBpatrimonio.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Horizon", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(720, 409);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(435, 35);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "__________________________________";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Horizon", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(931, 516);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(404, 35);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "__________________________________";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Horizon", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1188, 608);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(402, 35);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "__________________________________";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Tl_Incidente
             // 
@@ -86,6 +137,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TBnumero);
             this.Controls.Add(this.TBemail);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
             this.Name = "Tl_Incidente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tl_Incidente";
@@ -104,5 +158,8 @@
         private System.Windows.Forms.TextBox TBnumero;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox TBpatrimonio;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

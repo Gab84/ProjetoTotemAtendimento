@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.ImprimirETQ = new System.Windows.Forms.Button();
+            this.TextBox_defal = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ImprimirETQ
@@ -48,6 +52,52 @@
             this.ImprimirETQ.UseVisualStyleBackColor = false;
             this.ImprimirETQ.Click += new System.EventHandler(this.ImprimirETQ_Click);
             // 
+            // TextBox_defal
+            // 
+            this.TextBox_defal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.TextBox_defal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBox_defal.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_defal.Location = new System.Drawing.Point(1276, 416);
+            this.TextBox_defal.Margin = new System.Windows.Forms.Padding(0);
+            this.TextBox_defal.MaxLength = 20;
+            this.TextBox_defal.Name = "TextBox_defal";
+            this.TextBox_defal.Size = new System.Drawing.Size(291, 34);
+            this.TextBox_defal.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Horizon", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1270, 431);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(233, 35);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "__________________________________";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(1158, 531);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox1.MaxLength = 23;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 34);
+            this.textBox1.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Horizon", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1152, 546);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(225, 35);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "__________________________________";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Tl_Etiqueta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -55,17 +105,26 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BackgroundImage = global::ProjetoTotem.Properties.Resources.tela_etiqueta;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.TextBox_defal);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ImprimirETQ);
             this.Name = "Tl_Etiqueta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tl_Etiqueta";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button ImprimirETQ;
+        private System.Windows.Forms.TextBox TextBox_defal;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
