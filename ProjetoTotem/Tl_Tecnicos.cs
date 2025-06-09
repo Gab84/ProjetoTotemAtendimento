@@ -18,12 +18,14 @@ namespace ProjetoTotem
         private AtendimentoDAO atendimentoDAO;
         private Tecnico TecnicoLogado;
         
+        
         public Tl_Tecnicos(Tecnico UserTecnico)
         {
             InitializeComponent();
             this.Conn = new FBConnector();
             this.atendimentoDAO = new AtendimentoDAO();
             TecnicoLogado = UserTecnico;
+            
 
             AtualizarTela(atendimentoDAO, Conn.BDoor);
         }
@@ -82,12 +84,12 @@ namespace ProjetoTotem
 
         private void DataGrid_Pendentes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+          
         }
 
         private async void AtualizarTela(AtendimentoDAO atendimentoDAO, FirebaseClient Conn)
         {
-
+            
             var finalizados = await atendimentoDAO.GetAtendidos(Conn, TecnicoLogado);
             var pendentes = await atendimentoDAO.GetPendentes(Conn);
             var EmAtendimento = await atendimentoDAO.GetEmAtendimentoTecnico(Conn,TecnicoLogado);
@@ -98,6 +100,58 @@ namespace ProjetoTotem
             dataGrid_atendidos.DataSource = finalizados;
             dataGrid_Prioritarios.DataSource = prioritarios;
             dataGrid_EmAtendimento_T.DataSource = EmAtendimento;
+
+
+
+            //separa
+            DataGrid_Pendentes.Columns[1].Width = 200;
+            DataGrid_Pendentes.Columns[2].Visible = false;
+            DataGrid_Pendentes.Columns[3].Visible = false;
+            DataGrid_Pendentes.Columns[4].Visible = false;
+            DataGrid_Pendentes.Columns[5].Visible = false;
+            DataGrid_Pendentes.Columns[6].Visible = false;
+            DataGrid_Pendentes.Columns[7].Visible = false;
+            DataGrid_Pendentes.Columns[8].Visible = false;
+            DataGrid_Pendentes.Columns[9].Visible = false;
+            DataGrid_Pendentes.Columns[10].Visible = false;
+            DataGrid_Pendentes.Columns[11].Visible = false;
+            DataGrid_Pendentes.Columns["Datahora"].Visible = true;
+            DataGrid_Pendentes.Columns["Datahora"].Width = 150;
+            DataGrid_Pendentes.Font = new Font("Segoe UI", 12);
+
+            //separa
+            dataGrid_atendidos.Columns[1].Width = 200;
+            dataGrid_atendidos.Columns[3].Visible = false;
+            dataGrid_atendidos.Columns[2].Visible = false;
+            dataGrid_atendidos.Columns[4].Visible = false;
+            dataGrid_atendidos.Columns[5].Visible = false;
+            dataGrid_atendidos.Columns[6].Visible = false;
+            dataGrid_atendidos.Columns[7].Visible = false;
+            dataGrid_atendidos.Columns[8].Visible = false;
+            dataGrid_atendidos.Columns[9].Visible = false;
+            dataGrid_atendidos.Columns[10].Visible = false;
+            dataGrid_atendidos.Columns[11].Visible = false;
+            dataGrid_atendidos.Columns["Datahora"].Visible = true;
+            dataGrid_atendidos.Columns["Datahora"].Width = 150;
+            dataGrid_atendidos.Font = new Font("Segoe UI", 12);
+
+            //
+            dataGrid_EmAtendimento_T.Columns[1].Width = 200;
+            dataGrid_EmAtendimento_T.Columns[2].Visible = false;
+            dataGrid_EmAtendimento_T.Columns[3].Visible = false;
+            dataGrid_EmAtendimento_T.Columns[4].Visible = false;
+            dataGrid_EmAtendimento_T.Columns[5].Visible = false;
+            dataGrid_EmAtendimento_T.Columns[6].Visible = false;
+            dataGrid_EmAtendimento_T.Columns[7].Visible = false;
+            dataGrid_EmAtendimento_T.Columns[8].Visible = false;
+            dataGrid_EmAtendimento_T.Columns[9].Visible = false;
+            dataGrid_EmAtendimento_T.Columns[10].Visible = false;
+            dataGrid_EmAtendimento_T.Columns[11].Visible = false;
+            dataGrid_EmAtendimento_T.Columns["Datahora"].Visible = true;
+            dataGrid_EmAtendimento_T.Columns["Datahora"].Width = 150;
+            dataGrid_EmAtendimento_T.Font = new Font("Segoe UI", 12);
+
+
 
             if(dataGrid_EmAtendimento_T.RowCount > 0)
             {

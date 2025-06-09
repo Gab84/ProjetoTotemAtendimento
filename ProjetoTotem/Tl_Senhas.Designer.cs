@@ -57,6 +57,7 @@
             this.dataGrid_Concluidos.Location = new System.Drawing.Point(96, 236);
             this.dataGrid_Concluidos.Name = "dataGrid_Concluidos";
             this.dataGrid_Concluidos.RowHeadersWidth = 100;
+            this.dataGrid_Concluidos.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dataGrid_Concluidos.Size = new System.Drawing.Size(749, 745);
             this.dataGrid_Concluidos.TabIndex = 1;
             this.dataGrid_Concluidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);

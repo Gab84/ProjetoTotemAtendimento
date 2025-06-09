@@ -138,6 +138,24 @@ namespace ProjetoTotem
             dataGrid_Concluidos.DataSource = finalizados;
             //contador++;
 
+            dataGrid_Concluidos.Columns[1].Width = 300;
+            dataGrid_Concluidos.Columns["id"].Width = 150;
+            dataGrid_Concluidos.Columns[2].Visible = false;
+            dataGrid_Concluidos.Columns[3].Visible = false;
+            dataGrid_Concluidos.Columns[4].Visible = false;
+            dataGrid_Concluidos.Columns[5].Visible = false;
+            dataGrid_Concluidos.Columns[6].Visible = false;
+            dataGrid_Concluidos.Columns[7].Visible = false;
+            dataGrid_Concluidos.Columns[8].Visible = false;
+            dataGrid_Concluidos.Columns[9].Visible = false;
+            dataGrid_Concluidos.Columns[10].Visible = false;
+            dataGrid_Concluidos.Columns[11].Visible = false;
+            dataGrid_Concluidos.Columns["Datahora"].Visible = true;
+            dataGrid_Concluidos.Columns["Datahora"].Width = 200;
+            dataGrid_Concluidos.Font = new Font("Segoe UI", 16);
+
+
+
         }
 
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tl_Tecnicos));
             this.DataGrid_Pendentes = new System.Windows.Forms.DataGridView();
             this.dataGrid_EmAtendimento_T = new System.Windows.Forms.DataGridView();
@@ -43,9 +44,20 @@
             // 
             // DataGrid_Pendentes
             // 
-            this.DataGrid_Pendentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGrid_Pendentes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGrid_Pendentes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGrid_Pendentes.ColumnHeadersHeight = 25;
+            this.DataGrid_Pendentes.ColumnHeadersVisible = false;
             this.DataGrid_Pendentes.Location = new System.Drawing.Point(210, 259);
             this.DataGrid_Pendentes.Name = "DataGrid_Pendentes";
+            this.DataGrid_Pendentes.RowHeadersWidth = 60;
             this.DataGrid_Pendentes.Size = new System.Drawing.Size(515, 411);
             this.DataGrid_Pendentes.TabIndex = 0;
             this.DataGrid_Pendentes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGrid_Pendentes_CellContentClick);
