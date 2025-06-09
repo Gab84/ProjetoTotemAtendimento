@@ -87,8 +87,14 @@ namespace ProjetoTotem
                 this.Close();
 
             }
+            else if (UserTecnico.login != null & UserTecnico.Nome == "Tela de senhas")
+            {
 
-            this.Close();
+                this.Close();
+
+            }
+
+            
         }
 
         private void TBusuario_TextChanged(object sender, EventArgs e)
