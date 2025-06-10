@@ -11,25 +11,42 @@ namespace ProjetoTotem
     public class TecnicoDAO : Tecnico
     {
 
-        
-        public async Task<Tecnico> LoginChecker(FirebaseClient FBconnector, string InputLogin, string InputSenha)
+
+        public async Task<List<Tecnico>> GetTecnicos(FirebaseClient coon)
         {
-            Tecnico FoundTecnico = new Tecnico();
+            Tecnico tecnicos = new Tecnico();
             List<Tecnico> listaDeTecnicos = new List<Tecnico>();
-            var users = await FBconnector.Child("USERS").OnceAsListAsync<Tecnico>();
-            
-            
+            var users = await coon.Child("USERS").OnceAsListAsync<Tecnico>();
+
+
             foreach (var item in users)
             {
                 listaDeTecnicos.Add(item.Object);
-           
+
+            }
+
+            return listaDeTecnicos;
+
+        }
+
+        public async Task<Tecnico> LoginChecker(FirebaseClient coon, string InputLogin, string InputSenha)
+        {
+            Tecnico FoundTecnico = new Tecnico();
+            List<Tecnico> listaDeTecnicos = new List<Tecnico>();
+            var users = await coon.Child("USERS").OnceAsListAsync<Tecnico>();
+
+
+            foreach (var item in users)
+            {
+                listaDeTecnicos.Add(item.Object);
+
             }
 
 
-            if(listaDeTecnicos.Count > 0)
+            if (listaDeTecnicos.Count > 0)
             {
-                
-                for(int i = 1; i <  listaDeTecnicos.Count; i++)
+
+                for (int i = 1; i < listaDeTecnicos.Count; i++)
                 {
 
                     if (listaDeTecnicos[i].login == InputLogin & listaDeTecnicos[i].senha == InputSenha)
@@ -37,15 +54,15 @@ namespace ProjetoTotem
 
                         FoundTecnico = listaDeTecnicos[i];
                         break;
-                        
+
                     }
 
                 }
 
 
 
-          
-             }
+
+            }
 
             return FoundTecnico;
 
