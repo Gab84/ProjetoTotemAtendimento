@@ -105,20 +105,20 @@
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(1177, 643);
+            this.textBox2.Location = new System.Drawing.Point(1177, 640);
             this.textBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox2.MaxLength = 23;
+            this.textBox2.MaxLength = 35;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 34);
+            this.textBox2.Size = new System.Drawing.Size(401, 34);
             this.textBox2.TabIndex = 10;
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Horizon", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1171, 658);
+            this.label3.Location = new System.Drawing.Point(1171, 655);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(225, 35);
+            this.label3.Size = new System.Drawing.Size(426, 35);
             this.label3.TabIndex = 11;
             this.label3.Text = "__________________________________";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

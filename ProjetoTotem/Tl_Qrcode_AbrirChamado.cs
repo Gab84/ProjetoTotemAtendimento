@@ -16,7 +16,7 @@ namespace ProjetoTotem
         {
             InitializeComponent();
             //Tl_Qrcode_AbrirChamado.ActiveForm.Text = "teste";
-            this.Text = "QR CODE";
+            this.Text = "";
         }
     }
 }

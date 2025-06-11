@@ -16,5 +16,10 @@ namespace ProjetoTotem
         {
             InitializeComponent();
         }
+
+        private void Tl_etiquetaPronta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
