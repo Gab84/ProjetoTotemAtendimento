@@ -44,6 +44,8 @@ namespace ProjetoTotem
                 //MessageBox.Show("GERADO TESTE");
                 MessageBox.Show($"A senha para o seu atendimento é:{senha}");
 
+                this.Close();
+
                 
 
             }

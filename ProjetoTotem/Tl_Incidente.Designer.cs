@@ -65,9 +65,9 @@
             this.TBnumero.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
             this.TBnumero.Location = new System.Drawing.Point(937, 501);
             this.TBnumero.Margin = new System.Windows.Forms.Padding(0);
-            this.TBnumero.MaxLength = 22;
+            this.TBnumero.MaxLength = 40;
             this.TBnumero.Name = "TBnumero";
-            this.TBnumero.Size = new System.Drawing.Size(398, 34);
+            this.TBnumero.Size = new System.Drawing.Size(610, 34);
             this.TBnumero.TabIndex = 2;
             // 
             // pictureBox1
@@ -111,9 +111,9 @@
             this.label2.Font = new System.Drawing.Font("Horizon", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(931, 516);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(404, 35);
+            this.label2.Size = new System.Drawing.Size(616, 35);
             this.label2.TabIndex = 6;
-            this.label2.Text = "__________________________________";
+            this.label2.Text = "____________________________________________";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
