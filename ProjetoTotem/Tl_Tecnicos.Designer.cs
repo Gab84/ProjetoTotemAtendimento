@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tl_Tecnicos));
             this.DataGrid_Pendentes = new System.Windows.Forms.DataGridView();
             this.dataGrid_EmAtendimento_T = new System.Windows.Forms.DataGridView();
@@ -45,14 +45,14 @@
             // DataGrid_Pendentes
             // 
             this.DataGrid_Pendentes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGrid_Pendentes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGrid_Pendentes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGrid_Pendentes.ColumnHeadersHeight = 25;
             this.DataGrid_Pendentes.ColumnHeadersVisible = false;
             this.DataGrid_Pendentes.Location = new System.Drawing.Point(210, 259);
@@ -90,12 +90,15 @@
             // 
             // FINALIZAR
             // 
-            this.FINALIZAR.Location = new System.Drawing.Point(1550, 658);
+            this.FINALIZAR.BackColor = System.Drawing.Color.Transparent;
+            this.FINALIZAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FINALIZAR.Font = new System.Drawing.Font("Horizon", 26.25F, System.Drawing.FontStyle.Bold);
+            this.FINALIZAR.Location = new System.Drawing.Point(1329, 655);
             this.FINALIZAR.Name = "FINALIZAR";
-            this.FINALIZAR.Size = new System.Drawing.Size(75, 23);
+            this.FINALIZAR.Size = new System.Drawing.Size(322, 52);
             this.FINALIZAR.TabIndex = 5;
             this.FINALIZAR.Text = "FINALIZAR";
-            this.FINALIZAR.UseVisualStyleBackColor = true;
+            this.FINALIZAR.UseVisualStyleBackColor = false;
             this.FINALIZAR.Click += new System.EventHandler(this.FINALIZAR_Click);
             // 
             // Batender
@@ -124,6 +127,7 @@
             this.Controls.Add(this.dataGrid_Prioritarios);
             this.Controls.Add(this.dataGrid_EmAtendimento_T);
             this.Controls.Add(this.DataGrid_Pendentes);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Tl_Tecnicos";
             this.Text = "Tl_Tecnicos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
