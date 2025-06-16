@@ -93,7 +93,7 @@ namespace ProjetoTotem
             var finalizados = await atendimentoDAO.GetAtendidos(Conn, TecnicoLogado);
             var pendentes = await atendimentoDAO.GetPendentes(Conn);
             var EmAtendimento = await atendimentoDAO.GetEmAtendimentoTecnico(Conn,TecnicoLogado);
-            var prioritarios = await atendimentoDAO.GetPrioritarios(Conn,TecnicoLogado);
+            var prioritarios = await atendimentoDAO.GetPrioritarios(Conn);
 
 
             DataGrid_Pendentes.DataSource = pendentes;
@@ -151,9 +151,24 @@ namespace ProjetoTotem
             dataGrid_EmAtendimento_T.Columns["Datahora"].Width = 150;
             dataGrid_EmAtendimento_T.Font = new Font("Segoe UI", 12);
 
+            // dataGrid_Prioritarios
 
+            dataGrid_Prioritarios.Columns[1].Width = 200;
+            dataGrid_Prioritarios.Columns[2].Visible = false;
+            dataGrid_Prioritarios.Columns[3].Visible = false;
+            dataGrid_Prioritarios.Columns[4].Visible = false;
+            dataGrid_Prioritarios.Columns[5].Visible = false;
+            dataGrid_Prioritarios.Columns[6].Visible = false;
+            dataGrid_Prioritarios.Columns[7].Visible = false;
+            dataGrid_Prioritarios.Columns[8].Visible = false;
+            dataGrid_Prioritarios.Columns[9].Visible = false;
+            dataGrid_Prioritarios.Columns[10].Visible = false;
+            dataGrid_Prioritarios.Columns[11].Visible = false;
+            dataGrid_Prioritarios.Columns["Datahora"].Visible = true;
+            dataGrid_Prioritarios.Columns["Datahora"].Width = 150;
+            dataGrid_Prioritarios.Font = new Font("Segoe UI", 12);
 
-            if(dataGrid_EmAtendimento_T.RowCount > 0)
+            if (dataGrid_Prioritarios.RowCount > 0)
             {
                 Batender.Enabled = false;
 

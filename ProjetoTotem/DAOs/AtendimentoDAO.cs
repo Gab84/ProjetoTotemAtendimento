@@ -117,16 +117,17 @@ namespace ProjetoTotem
            (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "Em_atendimento").Where(b => b.TecnicoLogin == UserTecnico.login).ToList();
 
         
-        public async Task<List<Atendimento>> GetPrioritarios(FirebaseClient FBconnector,Tecnico UserTecnico) =>
-           (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "pendente").Where(b => b.TecnicoLogin == UserTecnico.login).Where(c => c.Prioridade == "Prioritario").ToList();
+        public async Task<List<Atendimento>> GetPrioritarios(FirebaseClient FBconnector) =>
+           (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "Prioritario").ToList();
         
 
         public async Task<List<Atendimento>> GetAtendidos(FirebaseClient FBconnector, Tecnico UserTecnico) =>
           (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "finalizado").Where(b => b.TecnicoLogin == UserTecnico.login).ToList();
-        
-       
 
 
+
+        public async Task<Atendimento> GetFinalizadosEspecifico(FirebaseClient FBconnector, string Id) =>
+           (await ListarAtendimentos(FBconnector)).Where(a => a.Status == "finalizado").Where(b => b.Id == Id).First();
 
 
 

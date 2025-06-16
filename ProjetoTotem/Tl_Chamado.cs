@@ -51,11 +51,20 @@ namespace ProjetoTotem
 
             }
         }
+
+
         private void Tl_Chamado_Load(object sender, EventArgs e)
         {
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
+            MessageBox.Show("O TECNICO FOI INFORMADO!");
+            this.Close();
+
+            
+        }
     }
 }
