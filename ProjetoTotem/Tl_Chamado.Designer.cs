@@ -33,12 +33,14 @@
             this.TextBox_defal = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Bclose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // CBtecnicos
             // 
             this.CBtecnicos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.CBtecnicos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBtecnicos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CBtecnicos.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
             this.CBtecnicos.FormattingEnabled = true;
@@ -83,12 +85,28 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // Bclose
+            // 
+            this.Bclose.BackColor = System.Drawing.Color.Transparent;
+            this.Bclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Bclose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Bclose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Bclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bclose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.Bclose.Location = new System.Drawing.Point(1736, 12);
+            this.Bclose.Name = "Bclose";
+            this.Bclose.Size = new System.Drawing.Size(156, 92);
+            this.Bclose.TabIndex = 11;
+            this.Bclose.UseVisualStyleBackColor = false;
+            this.Bclose.Click += new System.EventHandler(this.Bclose_Click);
+            // 
             // Tl_Chamado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjetoTotem.Properties.Resources.tela_fui_chamado;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.Bclose);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TextBox_defal);
             this.Controls.Add(this.label1);
@@ -108,5 +126,6 @@
         private System.Windows.Forms.TextBox TextBox_defal;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Bclose;
     }
 }

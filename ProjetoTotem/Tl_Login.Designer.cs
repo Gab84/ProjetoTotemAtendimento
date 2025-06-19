@@ -33,6 +33,7 @@
             this.Blogin = new System.Windows.Forms.Button();
             this.Bsair = new System.Windows.Forms.Button();
             this.TBusuario = new System.Windows.Forms.TextBox();
+            this.Bclose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TBsenha
@@ -90,6 +91,21 @@
             this.TBusuario.TabIndex = 4;
             this.TBusuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // Bclose
+            // 
+            this.Bclose.BackColor = System.Drawing.Color.Transparent;
+            this.Bclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Bclose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Bclose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Bclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bclose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.Bclose.Location = new System.Drawing.Point(1725, 12);
+            this.Bclose.Name = "Bclose";
+            this.Bclose.Size = new System.Drawing.Size(156, 92);
+            this.Bclose.TabIndex = 12;
+            this.Bclose.UseVisualStyleBackColor = false;
+            this.Bclose.Click += new System.EventHandler(this.Bclose_Click);
+            // 
             // Tl_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -97,6 +113,7 @@
             this.BackColor = System.Drawing.Color.Snow;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.Bclose);
             this.Controls.Add(this.TBusuario);
             this.Controls.Add(this.Bsair);
             this.Controls.Add(this.Blogin);
@@ -116,5 +133,6 @@
         private System.Windows.Forms.Button Blogin;
         private System.Windows.Forms.Button Bsair;
         private System.Windows.Forms.TextBox TBusuario;
+        private System.Windows.Forms.Button Bclose;
     }
 }

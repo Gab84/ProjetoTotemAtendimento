@@ -52,7 +52,7 @@ namespace ProjetoTotem
             else
             {
 
-                MessageBox.Show("Alguns campos não foram preenchidos!");
+                MessageBox.Show("PREENCHA TODOS OS CAMPOS!");
 
             }
 
@@ -63,6 +63,11 @@ namespace ProjetoTotem
         private void Tl_Incidente_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Bclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

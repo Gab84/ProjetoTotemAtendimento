@@ -89,8 +89,19 @@ namespace ProjetoTotem
                 this.Close();
                 
             }
+            else
+            {
+
+                MessageBox.Show("SELECIONE A REQUISIÇÃO");
+
+            }
 
 
+        }
+
+        private void Bclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 

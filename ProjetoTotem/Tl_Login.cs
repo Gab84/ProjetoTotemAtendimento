@@ -106,5 +106,10 @@ namespace ProjetoTotem
         {
             this.Close();
         }
+
+        private void Bclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

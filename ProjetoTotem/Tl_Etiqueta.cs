@@ -36,11 +36,16 @@ namespace ProjetoTotem
             }
             else
             {
-                MessageBox.Show("A CAMPOS NÃO PREENCHIDOS!");
+                MessageBox.Show("HÁ CAMPOS NÃO PREENCHIDOS!");
 
             }
 
             
+        }
+
+        private void Bclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

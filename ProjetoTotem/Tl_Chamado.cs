@@ -60,11 +60,40 @@ namespace ProjetoTotem
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            if(CBtecnicos.SelectedIndex != -1 & TextBox_defal.Text != "")
+            {
 
-            MessageBox.Show("O TECNICO FOI INFORMADO!");
+                MessageBox.Show("O TECNICO FOI INFORMADO!");
+                this.Close();
+
+            }  
+            else if (CBtecnicos.SelectedIndex > -1 & TextBox_defal.Text == "")
+            {
+
+                MessageBox.Show("PREENCHA O G DA MAQUINA!");
+
+            }
+
+            else if (CBtecnicos.SelectedIndex == -1 & TextBox_defal.Text != "")
+            {
+
+                MessageBox.Show("ESCOLHA O TECNICO!");
+
+            }
+
+            else if (CBtecnicos.SelectedIndex == -1 & TextBox_defal.Text == "")
+            {
+
+                MessageBox.Show("PREENCHA OS CAMPOS!");
+
+            }
+
+
+        }
+
+        private void Bclose_Click(object sender, EventArgs e)
+        {
             this.Close();
-
-            
         }
     }
 }

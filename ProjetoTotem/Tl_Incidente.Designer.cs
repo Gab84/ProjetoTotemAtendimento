@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.Bclose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,12 +128,28 @@
             this.label3.Text = "__________________________________";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // Bclose
+            // 
+            this.Bclose.BackColor = System.Drawing.Color.Transparent;
+            this.Bclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Bclose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Bclose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Bclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bclose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.Bclose.Location = new System.Drawing.Point(1721, 12);
+            this.Bclose.Name = "Bclose";
+            this.Bclose.Size = new System.Drawing.Size(156, 92);
+            this.Bclose.TabIndex = 8;
+            this.Bclose.UseVisualStyleBackColor = false;
+            this.Bclose.Click += new System.EventHandler(this.Bclose_Click);
+            // 
             // Tl_Incidente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjetoTotem.Properties.Resources.tela_gerar_senha;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.Bclose);
             this.Controls.Add(this.TBpatrimonio);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TBnumero);
@@ -161,5 +178,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Bclose;
     }
 }

@@ -33,6 +33,7 @@
             this.TBstatus = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Bclose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,12 +86,28 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // Bclose
+            // 
+            this.Bclose.BackColor = System.Drawing.Color.Transparent;
+            this.Bclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Bclose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Bclose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Bclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bclose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.Bclose.Location = new System.Drawing.Point(1736, 12);
+            this.Bclose.Name = "Bclose";
+            this.Bclose.Size = new System.Drawing.Size(156, 92);
+            this.Bclose.TabIndex = 13;
+            this.Bclose.UseVisualStyleBackColor = false;
+            this.Bclose.Click += new System.EventHandler(this.Bclose_Click);
+            // 
             // Tl_Requisicao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjetoTotem.Properties.Resources.tela_requisição_aprovada;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.Bclose);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TBstatus);
             this.Controls.Add(this.label2);
@@ -111,5 +128,6 @@
         private System.Windows.Forms.TextBox TBstatus;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Bclose;
     }
 }

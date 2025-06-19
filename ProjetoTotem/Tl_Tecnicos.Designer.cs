@@ -36,6 +36,7 @@
             this.dataGrid_atendidos = new System.Windows.Forms.DataGridView();
             this.FINALIZAR = new System.Windows.Forms.Button();
             this.Batender = new System.Windows.Forms.Button();
+            this.Bclose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_Pendentes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_EmAtendimento_T)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Prioritarios)).BeginInit();
@@ -90,12 +91,18 @@
             // 
             // FINALIZAR
             // 
-            this.FINALIZAR.Location = new System.Drawing.Point(1550, 658);
+            this.FINALIZAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.FINALIZAR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.FINALIZAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.FINALIZAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FINALIZAR.Font = new System.Drawing.Font("Horizon", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FINALIZAR.ForeColor = System.Drawing.Color.Black;
+            this.FINALIZAR.Location = new System.Drawing.Point(1328, 660);
             this.FINALIZAR.Name = "FINALIZAR";
-            this.FINALIZAR.Size = new System.Drawing.Size(75, 23);
+            this.FINALIZAR.Size = new System.Drawing.Size(335, 46);
             this.FINALIZAR.TabIndex = 5;
             this.FINALIZAR.Text = "FINALIZAR";
-            this.FINALIZAR.UseVisualStyleBackColor = true;
+            this.FINALIZAR.UseVisualStyleBackColor = false;
             this.FINALIZAR.Click += new System.EventHandler(this.FINALIZAR_Click);
             // 
             // Batender
@@ -112,12 +119,28 @@
             this.Batender.UseVisualStyleBackColor = false;
             this.Batender.Click += new System.EventHandler(this.Batender_Click);
             // 
+            // Bclose
+            // 
+            this.Bclose.BackColor = System.Drawing.Color.Transparent;
+            this.Bclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Bclose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Bclose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Bclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bclose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(251)))));
+            this.Bclose.Location = new System.Drawing.Point(1725, 12);
+            this.Bclose.Name = "Bclose";
+            this.Bclose.Size = new System.Drawing.Size(156, 92);
+            this.Bclose.TabIndex = 12;
+            this.Bclose.UseVisualStyleBackColor = false;
+            this.Bclose.Click += new System.EventHandler(this.Bclose_Click);
+            // 
             // Tl_Tecnicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.Bclose);
             this.Controls.Add(this.Batender);
             this.Controls.Add(this.FINALIZAR);
             this.Controls.Add(this.dataGrid_atendidos);
@@ -144,5 +167,6 @@
         private System.Windows.Forms.DataGridView dataGrid_atendidos;
         private System.Windows.Forms.Button FINALIZAR;
         private System.Windows.Forms.Button Batender;
+        private System.Windows.Forms.Button Bclose;
     }
 }

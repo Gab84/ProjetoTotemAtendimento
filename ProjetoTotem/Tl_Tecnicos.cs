@@ -34,8 +34,8 @@ namespace ProjetoTotem
         private async void Batender_Click(object sender, EventArgs e)
         {
 
-            
-            if(dataGrid_EmAtendimento_T.ColumnCount > 0)
+
+            if (dataGrid_EmAtendimento_T.ColumnCount > 0 & dataGrid_Prioritarios.ColumnCount < 0)
             {
 
 
@@ -68,6 +68,32 @@ namespace ProjetoTotem
                 }
 
 
+            }
+            else if (dataGrid_Prioritarios.ColumnCount > 0 & dataGrid_Prioritarios.SelectedRows.Count > 0)
+            {
+
+                // Obter o item selecionado
+                var selectedRow = dataGrid_Prioritarios.SelectedRows[0];
+                var atendimentoSelecionado = (Atendimento)selectedRow.DataBoundItem;
+
+                // Atualizar status e técnico
+                atendimentoSelecionado.Status = "Em_atendimento";
+                atendimentoSelecionado.portaAtendido = TecnicoLogado.PortaAtual;
+                atendimentoSelecionado.TecnicoLogin = TecnicoLogado.login; // ou Nome, se for esse o campo usado
+
+                // Salvar no Firebase
+                await atendimentoDAO.AtualizarAtendimento(Conn.BDoor, atendimentoSelecionado);
+
+                // Atualizar interface
+                AtualizarTela(atendimentoDAO, Conn.BDoor);
+                //Batender.Enabled = false;
+
+
+            }
+
+            else if (dataGrid_Prioritarios.ColumnCount > 0 & dataGrid_Prioritarios.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("EXISTEM ATENDIMENTOS PRIORITÁRIOS EM ABERTO!");
             }
 
             else
@@ -168,7 +194,7 @@ namespace ProjetoTotem
             dataGrid_Prioritarios.Columns["Datahora"].Width = 150;
             dataGrid_Prioritarios.Font = new Font("Segoe UI", 12);
 
-            if (dataGrid_Prioritarios.RowCount > 0)
+            if (dataGrid_EmAtendimento_T.RowCount > 0)
             {
                 Batender.Enabled = false;
 
@@ -229,10 +255,15 @@ namespace ProjetoTotem
             if(dataGrid_EmAtendimento_T.RowCount == 0)
             {
 
-                dataGrid_EmAtendimento_T.Enabled = true;
+                Batender.Enabled = true;
 
             }
 
+        }
+
+        private void Bclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
